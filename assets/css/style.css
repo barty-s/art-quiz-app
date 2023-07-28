@@ -20,7 +20,8 @@ body {
   padding: 15px;
 }
 
-h1 {
+h1,
+footer {
   color: #ffffff;
 }
 
@@ -40,4 +41,14 @@ h1 {
 
 .result-section {
   padding-top: 30px;
+}
+
+a,
+a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover {
+  font-weight: bold;
 }
