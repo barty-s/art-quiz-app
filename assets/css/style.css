@@ -1,3 +1,43 @@
+body {
+  background: linear-gradient(
+    109.6deg,
+    rgb(61, 121, 176) 11.3%,
+    rgb(35, 66, 164) 91.1%
+  );
+  font-family: "Montserrat", sans-serif;
+  font-family: "Quicksand", sans-serif;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.container {
+  color: #2342a4;
+  width: 70%;
+  margin: 40px auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 15px;
+}
+
 h1 {
-  color: red;
+  color: #ffffff;
+}
+
+.options-section {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-flow: row wrap;
+}
+.option {
+  color: #2342a4;
+  border-color: #2342a4;
+  background: #ffffff;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.result-section {
+  padding-top: 30px;
 }
