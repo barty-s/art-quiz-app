@@ -182,6 +182,11 @@ function displayNewQuestion() {
   let questionIndex = Math.floor(Math.random() * listOfQuestions.length);
   currentQuestion = listOfQuestions[questionIndex];
   questionImage.setAttribute("src", `assets/images/${currentQuestion.img}`);
+
+  answerOptions.forEach((answerOption) => {
+    let number = answerOption.dataset["option"];
+    answerOption.innerText = currentQuestion["option" + number];
+  });
 }
 
 //function checkAnswer()
