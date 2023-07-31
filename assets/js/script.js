@@ -166,15 +166,26 @@ let questions = [
     answer: 4,
   },
 ];
+let questionImage = document.getElementById("question-image");
 
 let totalQuestions = 8;
 
 //document.addEventListener("DOMContentLoaded", )
 
-//function runGame()
+function startGame() {
+  score = 0;
+  listOfQuestions = [...questions];
+  displayNewQuestion();
+}
 
-//function displayQuestion()
+function displayNewQuestion() {
+  let questionIndex = Math.floor(Math.random() * listOfQuestions.length);
+  currentQuestion = listOfQuestions[questionIndex];
+  questionImage.setAttribute("src", `assets/images/${currentQuestion.img}`);
+}
 
 //function checkAnswer()
 
 //function increaseScore()
+
+startGame();
