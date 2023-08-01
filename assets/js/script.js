@@ -167,9 +167,10 @@ let questions = [
   },
 ];
 let questionImage = document.getElementById("question-image");
+let scoreText = document.getElementById("score");
 
 let questionCounter = 0;
-let totalQuestions = 3;
+let totalQuestions = 8;
 
 //document.addEventListener("DOMContentLoaded", )
 
@@ -216,6 +217,10 @@ answerOptions.forEach((answerOption) => {
     let classToApply =
       selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
 
+    if (classToApply === "correct") {
+      increaseScore(1);
+    }
+
     selectedOption.classList.add(classToApply);
 
     setTimeout(() => {
@@ -225,8 +230,9 @@ answerOptions.forEach((answerOption) => {
   });
 });
 
-//function checkAnswer()
-
-//function increaseScore()
+function increaseScore(num) {
+  score += num;
+  scoreText.innerText = score;
+}
 
 startGame();
