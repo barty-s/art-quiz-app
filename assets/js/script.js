@@ -181,7 +181,7 @@ function startGame() {
 
 function displayNewQuestion() {
   if (listOfQuestions.length === 0 || questionCounter > totalQuestions) {
-    console.log("Game over"); //need to add HTML element showing the total score and button to go back to start of game
+    //need to add HTML element showing the total score and button to go back to start of game
   }
 
   questionCounter++;
@@ -211,9 +211,20 @@ answerOptions.forEach((answerOption) => {
     //to show the number of the option selected by the user
     let selectedAnswer = selectedOption.dataset["option"];
     console.log(selectedAnswer);
-    displayNewQuestion();
+
+    //to show if the answer is correct or incorrect
+    let classToApply =
+      selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
+
+    selectedOption.classList.add(classToApply);
+
+    setTimeout(() => {
+      selectedOption.classList.remove(classToApply);
+      displayNewQuestion();
+    }, 1000);
   });
 });
+
 //function checkAnswer()
 
 //function increaseScore()

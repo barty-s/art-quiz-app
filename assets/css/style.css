@@ -54,6 +54,14 @@ footer {
   padding: 10px;
 }
 
+.correct {
+  background-color: #52c952;
+}
+
+.incorrect {
+  background-color: #f23a3a;
+}
+
 .result-section {
   padding-top: 30px;
 }
