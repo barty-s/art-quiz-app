@@ -1,5 +1,5 @@
+let gameSection = document.getElementById("container");
 let answerOptions = Array.from(document.getElementsByClassName("options-text"));
-
 let currentQuestion = {};
 let acceptingAnswers = false;
 let score = 0;
@@ -168,11 +168,8 @@ let questions = [
 ];
 let questionImage = document.getElementById("question-image");
 let scoreText = document.getElementById("score");
-
 let questionCounter = 0;
-let totalQuestions = 8;
-
-//document.addEventListener("DOMContentLoaded", )
+let totalQuestions = 2;
 
 function startGame() {
   score = 0;
@@ -182,16 +179,17 @@ function startGame() {
 
 function displayNewQuestion() {
   if (listOfQuestions.length === 0 || questionCounter > totalQuestions) {
-    //need to add HTML element showing the total score and button to go back to start of game
+    displayEndSection();
   }
 
   questionCounter++;
 
   let questionIndex = Math.floor(Math.random() * listOfQuestions.length);
   currentQuestion = listOfQuestions[questionIndex];
+
+  //to set the image/text for the answer options, taking the info from the array
   questionImage.setAttribute("src", `assets/images/${currentQuestion.img}`);
 
-  //to set the text for the answer options, taking the info from the array
   answerOptions.forEach((answerOption) => {
     let number = answerOption.dataset["option"];
     answerOption.innerText = currentQuestion["option" + number];
@@ -203,17 +201,25 @@ function displayNewQuestion() {
   acceptingAnswers = true;
 }
 
+function displayEndSection() {
+  container.innerHTML = `
+  <h2>Thank you for playing!</h2>
+  <h3>Your score is ${score}!</h3>
+  <button id="start-again">Take Quiz Again</button>
+  `;
+}
+
 answerOptions.forEach((answerOption) => {
   answerOption.addEventListener("click", (e) => {
     if (!acceptingAnswers) return;
-
     acceptingAnswers = false;
     let selectedOption = e.target;
+
     //to show the number of the option selected by the user
     let selectedAnswer = selectedOption.dataset["option"];
     console.log(selectedAnswer);
 
-    //to show if the answer is correct or incorrect
+    //to show if the answer is correct or incorrect and increase score counter
     let classToApply =
       selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
 
