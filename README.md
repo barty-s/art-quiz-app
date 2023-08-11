@@ -15,6 +15,7 @@ GoogleFonts
 Google Fonts
 SheCodes for Background gradient code
 https://wireframepro.mockflow.com/ - for wireframe design
+FontAwesome for social media links
 
 Media -
 Images sourced from Google with the Creative Commons License

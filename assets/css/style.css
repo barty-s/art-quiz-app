@@ -44,7 +44,7 @@ nav a:visited {
 .container {
   color: #2342a4;
   width: 70%;
-  margin: 100px auto;
+  margin: 100px auto 50px;
   background-color: #ffffff;
   border-radius: 10px;
   padding: 15px;
@@ -123,6 +123,23 @@ a:visited {
 
 a:hover {
   font-weight: bold;
+}
+
+footer ul {
+  margin: 0px 4%;
+}
+
+footer li {
+  padding: 15px 4%;
+  font-size: 20px;
+}
+
+footer a {
+  color: #ffff;
+}
+
+footer a:visited {
+  color: #ffff;
 }
 
 p {
