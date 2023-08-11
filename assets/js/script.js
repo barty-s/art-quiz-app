@@ -204,7 +204,7 @@ function displayNewQuestion() {
 function displayEndSection() {
   container.innerHTML = `
   <h2>Thank you for playing!</h2>
-  <h3>Your score is ${score}!</h3>
+  <h3>🎉 Your score is ${score} 🎉</h3>
   <button id="start-again" onClick="window.location.reload();">Take Quiz Again</button>
   `;
 }

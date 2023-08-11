@@ -4,6 +4,8 @@ This is an art quiz app where the user can test their knowledge of artworks and 
 
 Credits -
 Create a Quiz App using HTML, CSS & JavaScript - by CodeGeek https://www.youtube.com/watch?v=Opje9VBrNfg&t=1791s
+https://stackoverflow.com/questions/5480945/refreshing-page-on-click-of-a-buttons
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/#aa-background
 
 Technologies -
 GitHub Desktop
