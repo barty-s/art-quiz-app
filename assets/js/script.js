@@ -205,7 +205,7 @@ function displayEndSection() {
   container.innerHTML = `
   <h2>Thank you for playing!</h2>
   <h3>Your score is ${score}!</h3>
-  <button id="start-again">Take Quiz Again</button>
+  <button id="start-again" onClick="window.location.reload();">Take Quiz Again</button>
   `;
 }
 
@@ -217,7 +217,6 @@ answerOptions.forEach((answerOption) => {
 
     //to show the number of the option selected by the user
     let selectedAnswer = selectedOption.dataset["option"];
-    console.log(selectedAnswer);
 
     //to show if the answer is correct or incorrect and increase score counter
     let classToApply =

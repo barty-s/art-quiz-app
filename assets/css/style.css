@@ -46,7 +46,8 @@ footer {
   gap: 10px;
   flex-flow: row wrap;
 }
-.options-text {
+.options-text,
+#start-again {
   color: #2342a4;
   border-color: #2342a4;
   background: #ffffff;
@@ -54,12 +55,23 @@ footer {
   padding: 10px;
 }
 
-.correct {
+button:hover {
+  cursor: pointer;
+  background-color: #2342a4;
+  color: #ffffff;
+}
+.correct,
+.correct:hover {
   background-color: #52c952;
+  color: #ffffff;
+  border-color: #52c952;
 }
 
-.incorrect {
+.incorrect,
+.incorrect:hover {
   background-color: #f23a3a;
+  color: #ffffff;
+  border-color: #f23a3a;
 }
 
 .result-section {
