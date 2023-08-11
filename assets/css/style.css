@@ -124,3 +124,23 @@ a:visited {
 a:hover {
   font-weight: bold;
 }
+
+p {
+  line-height: 50px;
+}
+
+#book-link {
+  color: #2342a4;
+}
+
+#lets-play-button {
+  color: #2342a4;
+  margin: 10px;
+  border: 1px solid #2342a4;
+  border-radius: 10px;
+  padding: 8px;
+}
+
+#lets-play-button:hover {
+  border: 2px solid #2342a4;
+}
