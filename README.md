@@ -6,7 +6,9 @@ This is an art quiz app intended to test the user's knowlegde of Great Women Art
 
 ### User Stories
 
-- Home Page - As a visiting user, I want to be able to start the quiz immediately without having to introduce my name or age.
+- Home Page - As a visiting user, I want to be able to start the quiz immediately without having to introduce my name or age. I want to see the correct or incorrect answer after making my selection and I want to see my score recorded.
+
+- End Section - As a visiting user, I want to see my final result after completing the quiz and have the option to take the quiz again.
 
 - About Page - As a visiting user, I want to learn more about the quiz and find a link to further information about Great Women Artists.
 
