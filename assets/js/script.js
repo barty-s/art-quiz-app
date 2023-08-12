@@ -1,3 +1,6 @@
+/**
+ * List of variables to be used through out the javasript code
+ */
 let gameSection = document.getElementById("container");
 let answerOptions = Array.from(document.getElementsByClassName("options-text"));
 let currentQuestion = {};
@@ -171,13 +174,21 @@ let scoreText = document.getElementById("score");
 let questionCounter = 0;
 let totalQuestions = 2;
 
+/**
+ * Main function to run the game, it calls the function that displays the questions
+ */
 function startGame() {
   score = 0;
   listOfQuestions = [...questions];
   displayNewQuestion();
 }
 
+/**
+ * Function to generate a new question, randomly selected from list of questions.
+ * If the question limit has been reached, the final result will be shown.
+ */
 function displayNewQuestion() {
+  //to display the final result
   if (listOfQuestions.length === 0 || questionCounter > totalQuestions) {
     displayEndSection();
   }
@@ -190,6 +201,7 @@ function displayNewQuestion() {
   //to set the image/text for the answer options, taking the info from the array
   questionImage.setAttribute("src", `assets/images/${currentQuestion.img}`);
 
+  //to display the answer options associated with each image
   answerOptions.forEach((answerOption) => {
     let number = answerOption.dataset["option"];
     answerOption.innerText = currentQuestion["option" + number];
@@ -201,6 +213,9 @@ function displayNewQuestion() {
   acceptingAnswers = true;
 }
 
+/**
+ * Funtion called when question limit has been reached - shows final score
+ */
 function displayEndSection() {
   container.innerHTML = `
   <h2>Thank you for playing!</h2>
@@ -218,7 +233,7 @@ answerOptions.forEach((answerOption) => {
     //to show the number of the option selected by the user
     let selectedAnswer = selectedOption.dataset["option"];
 
-    //to show if the answer is correct or incorrect and increase score counter
+    //to check if the answer is correct or incorrect and increase score counter accordingly
     let classToApply =
       selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
 
@@ -228,6 +243,7 @@ answerOptions.forEach((answerOption) => {
 
     selectedOption.classList.add(classToApply);
 
+    // to move on to the next question
     setTimeout(() => {
       selectedOption.classList.remove(classToApply);
       displayNewQuestion();
@@ -235,6 +251,9 @@ answerOptions.forEach((answerOption) => {
   });
 });
 
+/**
+ * Function to increase the score if user answers correctly
+ */
 function increaseScore(num) {
   score += num;
   scoreText.innerText = score;

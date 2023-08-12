@@ -1,3 +1,4 @@
+/*Styling for main body of website and general features*/
 body {
   background: linear-gradient(
     109.6deg,
@@ -11,7 +12,26 @@ body {
   text-transform: uppercase;
 }
 
-/*Nav-Bar styling used across all pages of site*/
+ul {
+  padding: 0;
+  margin: 4px;
+}
+
+li {
+  list-style-type: none;
+}
+
+a,
+a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover {
+  font-weight: bold;
+}
+
+/*Styling for Nav-bar used on all pages of website*/
 nav {
   position: fixed;
   top: 0;
@@ -38,9 +58,10 @@ nav a:visited {
 
 .flex-item {
   margin: 0 7px;
-  font-size: 22px;
+  font-size: 20px;
 }
 
+/*Styling for game content section*/
 .container {
   color: #2342a4;
   width: 70%;
@@ -48,19 +69,6 @@ nav a:visited {
   background-color: #ffffff;
   border-radius: 10px;
   padding: 15px;
-}
-
-ul {
-  padding: 0;
-  margin: 4px;
-}
-li {
-  list-style-type: none;
-}
-
-footer {
-  color: #ffffff;
-  width: 100%;
 }
 
 #image-div {
@@ -83,6 +91,7 @@ footer {
   gap: 10px;
   flex-flow: row wrap;
 }
+
 .options-text,
 #start-again {
   color: #2342a4;
@@ -97,6 +106,7 @@ button:hover {
   background-color: #2342a4;
   color: #ffffff;
 }
+
 .correct,
 .correct:hover {
   background-color: #52c952;
@@ -115,14 +125,10 @@ button:hover {
   padding-top: 30px;
 }
 
-a,
-a:visited {
+/*Styling for footer section on all pages*/
+footer {
   color: #ffffff;
-  text-decoration: none;
-}
-
-a:hover {
-  font-weight: bold;
+  width: 100%;
 }
 
 footer ul {
@@ -142,6 +148,7 @@ footer a:visited {
   color: #ffff;
 }
 
+/*Styling for about page*/
 p {
   line-height: 50px;
 }
