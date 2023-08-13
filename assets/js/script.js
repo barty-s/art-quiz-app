@@ -185,7 +185,7 @@ function displayNewQuestion() {
   let questionIndex = Math.floor(Math.random() * listOfQuestions.length);
   currentQuestion = listOfQuestions[questionIndex];
 
-  //to set the image/text for the answer options, taking the info from the array
+  //to set the image/text for the answer options, taking the info from the array (original code)
   questionImage.setAttribute("src", `assets/images/${currentQuestion.img}`);
 
   //to display the answer options associated with each image
@@ -201,7 +201,7 @@ function displayNewQuestion() {
 }
 
 /**
- * Funtion called when question limit has been reached - shows final score and play again button
+ * Funtion called when question limit has been reached - shows final score and play again button (original code)
  */
 function displayEndSection() {
   container.innerHTML = `
@@ -211,6 +211,7 @@ function displayEndSection() {
   `;
 }
 
+//to loop through the answer options
 answerOptions.forEach(function (answerOption) {
   answerOption.addEventListener("click", (e) => {
     if (!acceptAnswers) return;
