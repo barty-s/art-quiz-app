@@ -4,6 +4,8 @@
 
 This is an art quiz app intended to test the user's knowlegde of Great Women Artists and their artworks. This quiz was inspired by the recently published 'The Story of Art Without Men' by Katy Hassel, and hopes to promote an interest in the user to further explore the works of Great Women Artists throughout history and today.
 
+<img src="readme/responsive.png">
+
 ### User Stories
 
 - Home Page - As a visiting user, I want to be able to start the quiz immediately without having to introduce my name or age. I want to see the correct or incorrect answer after making my selection and I want to see my score recorded.
@@ -14,7 +16,33 @@ This is an art quiz app intended to test the user's knowlegde of Great Women Art
 
 ### Features
 
-- The user is presented with an image immediately on page load and can choose between four artist's names. If the correct answer is selected the tally at the bottom of the page will increase by 1 and the next image will be shown. If the incorrect answer is selected, the correct answer will be shown in green and then the next image will be shown. When the user has seen ten images, they will be presented with their total correct score and the option to take the quiz again.
+- Nav Bar - the same nav-bar design appears on both pages of the site. The title of the quiz is visible in larger text and directly underneath are links taking the user to the About page or the Play page.
+
+<img src="readme/nav-bar.png">
+
+- Game Start Section - The user is presented with an image immediately on page load and can choose between four artist's names.
+
+<img src="readme/game-section.png">
+
+If the correct answer is selected, the option will turn green and the tally at the bottom of the page will increase by 1. The next image will then be shown.
+
+<img src="readme/correct-answer.png">
+
+If the incorrect answer is selected, the selected option will turn red. The score will not be updated. Then the next image will be shown.
+
+<img src="readme/incorrect-answer.png">
+
+- Game End Section - When the user has seen eight images, they will be presented with their total correct score and the option to take the quiz again.
+
+<img src="readme/end-section.png">
+
+- Footer - The same footer structure is used on both pages. There links to the typical social media sites and links to the coder's LinkedIn and the site's GitHub Repository page.
+
+<img src="readme/footer.png">
+
+- About Page - this page explains the idea behind the quiz and has a button with a link to start the quiz.
+
+<img src="readme/about-section.png">
 
 ### Future Features
 
@@ -33,6 +61,7 @@ SheCodes for Background gradient code
 https://wireframepro.mockflow.com/ - for wireframe design
 FontAwesome for social media links
 https://www.iloveimg.com/ - to resize images
+https://ui.dev/amiresponsive - to check site responsiveness
 
 ### Testing
 
