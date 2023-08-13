@@ -48,7 +48,7 @@ https://www.iloveimg.com/ - to resize images
 
 #### Content
 
-- Create a Quiz App using HTML, CSS & JavaScript - by CodeGeek https://www.youtube.com/watch?v=Opje9VBrNfg&t=1791s - this video helped structure the Javascript code and it was customised as much as possible to fit the needs of the art quiz.
+- Create a Quiz App using HTML, CSS & JavaScript - by CodeGeek https://www.youtube.com/watch?v=Opje9VBrNfg&t=1791s - this video was used for the structure of the Javascript code and it was customised as much as possible to fit the needs of the art quiz.
 - https://stackoverflow.com/questions/5480945/refreshing-page-on-click-of-a-buttons - this site helped solve the problem of restarting the quiz with the button click
 - https://css-tricks.com/snippets/css/a-guide-to-flexbox/#aa-background - this site breaks down the specificities of flexbox.
 

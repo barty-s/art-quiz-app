@@ -1,10 +1,13 @@
 /**
+ * This code was customised from the video tutorial 'Create a Quiz App using HTML, CSS & JavaScript', by CodeGeek https://www.youtube.com/watch?v=Opje9VBrNfg&t=1791s
+ */
+/**
  * List of variables to be used through out the javasript code
  */
 let gameSection = document.getElementById("container");
 let answerOptions = Array.from(document.getElementsByClassName("options-text"));
 let currentQuestion = {};
-let acceptingAnswers = false;
+let acceptAnswers = false;
 let score = 0;
 let listOfQuestions = [];
 let questions = [
@@ -156,7 +159,7 @@ let questions = [
 let questionImage = document.getElementById("question-image");
 let scoreText = document.getElementById("score");
 let questionCounter = 0;
-let totalQuestions = 2;
+let totalQuestions = 7;
 
 /**
  * Main function to run the game, it calls the function that displays the questions
@@ -191,14 +194,14 @@ function displayNewQuestion() {
     answerOption.innerText = currentQuestion["option" + number];
   });
 
-  //so the question just shown won't be shown again, splice it out of the array
+  //splice the question just shown out of the array so it won't be shown again,
   listOfQuestions.splice(questionIndex, 1);
 
-  acceptingAnswers = true;
+  acceptAnswers = true;
 }
 
 /**
- * Funtion called when question limit has been reached - shows final score
+ * Funtion called when question limit has been reached - shows final score and play again button
  */
 function displayEndSection() {
   container.innerHTML = `
@@ -208,10 +211,10 @@ function displayEndSection() {
   `;
 }
 
-answerOptions.forEach((answerOption) => {
+answerOptions.forEach(function (answerOption) {
   answerOption.addEventListener("click", (e) => {
-    if (!acceptingAnswers) return;
-    acceptingAnswers = false;
+    if (!acceptAnswers) return;
+    acceptAnswers = false;
     let selectedOption = e.target;
 
     //to show the number of the option selected by the user
