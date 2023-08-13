@@ -31,7 +31,7 @@ a:hover {
   font-weight: bold;
 }
 
-/*Styling for Nav-bar used on all pages of website*/
+/*Styling for nav-bar used on all pages of website*/
 nav {
   position: fixed;
   top: 0;
@@ -56,7 +56,7 @@ nav a:visited {
   justify-content: center;
 }
 
-.flex-item {
+.nav-list-item {
   margin: 0 7px;
   font-size: 20px;
 }
@@ -71,21 +71,16 @@ nav a:visited {
   padding: 15px;
 }
 
-#image-div {
-  margin: 0 auto;
-  overflow: hidden;
-}
-
 #question-image {
   display: block;
   border-radius: 5px;
   max-width: 100%;
   max-height: auto;
-  margin: 0 auto;
+  margin: 25px auto;
 }
 
 .options-section {
-  margin-top: 10px;
+  margin-top: 25px;
   display: flex;
   justify-content: center;
   gap: 10px;
@@ -123,12 +118,14 @@ button:hover {
 
 .result-section {
   padding-top: 30px;
+  margin-bottom: 10px;
 }
 
 /*Styling for footer section on all pages*/
 footer {
   color: #ffffff;
   width: 100%;
+  margin-bottom: 10px;
 }
 
 footer ul {
@@ -150,7 +147,7 @@ footer a:visited {
 
 /*Styling for about page*/
 p {
-  line-height: 50px;
+  line-height: 30px;
 }
 
 #book-link {
@@ -167,4 +164,20 @@ p {
 
 #lets-play-button:hover {
   border: 2px solid #2342a4;
+}
+
+/*Responsiveness on small devices styling*/
+@media screen and (max-width: 950px) {
+  h1 {
+    font-size: 16px;
+  }
+
+  .nav-list-item {
+    font-size: 14px;
+  }
+
+  .container {
+    margin: 60px auto 10px;
+    width: 85%;
+  }
 }
