@@ -1,5 +1,5 @@
 /**
- * This code was customised from the video tutorial 'Create a Quiz App using HTML, CSS & JavaScript',
+ * This code was inspired by and customised from the video tutorial 'Create a Quiz App using HTML, CSS & JavaScript',
  * by CodeGeek https://www.youtube.com/watch?v=Opje9VBrNfg&t=1791s
  */
 
@@ -200,7 +200,7 @@ function displayNewQuestion() {
 
 //Funtion called when question limit has been reached - shows final score and play again button (original code)
 function displayEndSection() {
-  container.innerHTML = `
+  gameSection.innerHTML = `
   <h2>Thank you for playing!</h2>
   <h3>🎉 Your score is ${score} 🎉</h3>
   <button id="start-again" onClick="window.location.reload();">Take Quiz Again</button>
