@@ -88,24 +88,34 @@ If the incorrect answer is selected, the selected option will turn red. The scor
 
 ##### Game Section
 
-1.
-2.
-3.
-4.
+1. As the user lands on the quiz homepage, they will see the nav-bar with the title of the quiz and below that, a link to 'Play', which will refresh the page, and to 'About', which will navigate the user to the About page.
+2. Immediately below the nav-bar the user sees the quiz section. They will see the main question - 'Name the artist', which is what they must do throughout the quiz.
+3. Below the question, there will be an image of an artwork. This image changes when the user clicks on one of the artist option buttons, essentially starting the quiz.
+4. There are four artist option buttons just under the image. One of the buttons is the correct answer and will turn green when selected - indicating the user was correct. If the user selects an incorrect answer, it will turn red. The correct answer will not be shown. The user can only discover the correct answer by re-taking the quiz.
+5. Below the artist options the user will see their score tally. This will increase by one if they answer correctly, or remain unchanged if they answer incorrectly. The total number of questions in the quiz is eight. However, there are 18 images for the quiz to randomly select from, therefore ensuring the user can play multiple times without the risk of having every question repeated.
+6. The user will then see the footer which has three icons for social media websites and the author's line with links to their LinkedIn profile and the GitHub repository for the quiz. All links open in a new tab.
+
+<img src="readme/play-responsive.png">
+<img src="readme/play-mini.png">
 
 ##### End Section
 
-1.
-2.
-3.
-4.
+1. When the user has answered eight questions the quiz section inner html will change to the end section html.
+2. The user will see a message congratulating them on finishing the quiz. They will see their total correct score. And they will see a button inviting them to take the quiz again.
+3. On clicking the Take Quiz Again button, the screen will refresh and the quiz will start from 0 again.
+
+<img src="readme/end-responsive.png">
+<img src="readme/end-mini.png">
 
 #### About Page
 
-1.
-2.
-3.
-4.
+1. When the user clicks the 'About' link in the nav-bar, they will be directed to the About page.
+2. They will see the same nav-bar and footer as on the home page.
+3. The user will see a brief explanation of the inspiration behind the quiz which contains a link to 'The Story of Art Without Men' book website which opens in a new tab.
+4. The user will then see a button 'Let's Play'. When clicked, the user will be navigated back to the Play page, the main page of the site, where they can begin the quiz.
+
+<img src="readme/about-responsive.png">
+<img src="readme/about-mini.png">
 
 ### Supported Screens and Browsers
 
@@ -163,7 +173,7 @@ The live link can be found here: https://barty-s.github.io/art-quiz-app/index.ht
 #### Content
 
 - 'Create a Quiz App using HTML, CSS & JavaScript' by CodeGeek https://www.youtube.com/watch?v=Opje9VBrNfg&t=1791s - this video was used for the structure of the Javascript code.
-  While using this tutorial as a learning tool for this project, the code was customised as much as possible to fit the needs of the Art Quiz and to ensure plagiarism was avoided.
+  While using this tutorial as a learning tool for this project, the code was customised as much as possible to fit the scope of the Art Quiz app project and to ensure plagiarism was avoided.
 - https://stackoverflow.com/questions/5480945/refreshing-page-on-click-of-a-buttons - this site helped solve the problem I had with the code for restarting the quiz with the button click.
 - https://css-tricks.com/snippets/css/a-guide-to-flexbox/#aa-background - this site breaks down the specificities of flexbox.
 
