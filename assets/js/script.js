@@ -1,9 +1,9 @@
 /**
- * This code was customised from the video tutorial 'Create a Quiz App using HTML, CSS & JavaScript', by CodeGeek https://www.youtube.com/watch?v=Opje9VBrNfg&t=1791s
+ * This code was customised from the video tutorial 'Create a Quiz App using HTML, CSS & JavaScript',
+ * by CodeGeek https://www.youtube.com/watch?v=Opje9VBrNfg&t=1791s
  */
-/**
- * List of variables to be used through out the javasript code
- */
+
+//List of variables to be used throughout the javascript code
 let gameSection = document.getElementById("container");
 let answerOptions = Array.from(document.getElementsByClassName("options-text"));
 let currentQuestion = {};
@@ -161,9 +161,7 @@ let scoreText = document.getElementById("score");
 let questionCounter = 0;
 let totalQuestions = 7;
 
-/**
- * Main function to run the game, it calls the function that displays the questions
- */
+// Main function to run the game, it calls the function that displays the questions
 function startGame() {
   score = 0;
   listOfQuestions = [...questions];
@@ -176,7 +174,7 @@ function startGame() {
  */
 function displayNewQuestion() {
   //to display the final result
-  if (listOfQuestions.length === 0 || questionCounter > totalQuestions) {
+  if (questionCounter > totalQuestions) {
     displayEndSection();
   }
 
@@ -200,9 +198,7 @@ function displayNewQuestion() {
   acceptAnswers = true;
 }
 
-/**
- * Funtion called when question limit has been reached - shows final score and play again button (original code)
- */
+//Funtion called when question limit has been reached - shows final score and play again button (original code)
 function displayEndSection() {
   container.innerHTML = `
   <h2>Thank you for playing!</h2>
@@ -239,9 +235,7 @@ answerOptions.forEach(function (answerOption) {
   });
 });
 
-/**
- * Function to increase the score if user answers correctly
- */
+//Function to increase the score if user answers correctly
 function increaseScore(num) {
   score += num;
   scoreText.innerText = score;

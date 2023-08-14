@@ -46,7 +46,14 @@ If the incorrect answer is selected, the selected option will turn red. The scor
 
 ### Future Features
 
-### Typography and Color Scheme
+- Question options - I would like to add more question images and options to make the quiz bigger and more engaging.
+- High Score Record - I would like to add a page which keeps a record of the names of the players with the highest scores.
+
+### Typography and Color
+
+- Typography: The font Monserrat was chosen. It was developed as a result of the old posters and signs in the traditional Montserrat neighborhood of Buenos Aires. It is reminiscent of the urban typography that emerged in the first half of the twentieth century.
+
+- Color-scheme - the colors blue and white were chosen to allow for adequate accessibility and readability. And so as not to distract the user from the images that will be shown in the quiz. The background of the main section is a linear-gradiant selected from the SheCodes free access linear-gradiant library.
 
 ### Wireframes
 

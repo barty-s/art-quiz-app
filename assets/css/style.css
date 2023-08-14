@@ -6,8 +6,6 @@ body {
     rgb(35, 66, 164) 91.1%
   );
   font-family: "Montserrat", sans-serif;
-  font-family: "Quicksand", sans-serif;
-  font-family: "Roboto", sans-serif;
   text-align: center;
   text-transform: uppercase;
 }
@@ -177,7 +175,7 @@ p {
   }
 
   .container {
-    margin: 60px auto 10px;
+    margin: 70px auto 10px;
     width: 85%;
   }
 }
