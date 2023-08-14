@@ -11,8 +11,8 @@ body {
 }
 
 ul {
-  padding: 0;
   margin: 4px;
+  padding: 0;
 }
 
 li {
@@ -31,12 +31,12 @@ a:hover {
 
 /*Styling for nav-bar used on all pages of website*/
 nav {
+  background-color: #ffffff;
+  color: #2342a4;
+  left: 0;
   position: fixed;
   top: 0;
-  left: 0;
-  background-color: #ffffff;
   width: 100%;
-  color: #2342a4;
 }
 
 h1 {
@@ -55,74 +55,74 @@ nav a:visited {
 }
 
 .nav-list-item {
-  margin: 0 7px;
   font-size: 20px;
+  margin: 0 7px;
 }
 
 /*Styling for game content section*/
 .container {
-  color: #2342a4;
-  width: 70%;
-  margin: 100px auto 50px;
   background-color: #ffffff;
   border-radius: 10px;
+  color: #2342a4;
+  margin: 100px auto 50px;
   padding: 15px;
+  width: 70%;
 }
 
 #question-image {
-  display: block;
   border-radius: 5px;
-  max-width: 100%;
+  display: block;
   margin: 25px auto;
+  max-width: 100%;
 }
 
 .options-section {
-  margin-top: 25px;
   display: flex;
-  justify-content: center;
-  gap: 10px;
   flex-flow: row wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 25px;
 }
 
 .options-text,
 #start-again {
-  color: #2342a4;
-  border-color: #2342a4;
   background: #ffffff;
+  border-color: #2342a4;
   border-radius: 5px;
+  color: #2342a4;
   padding: 10px;
 }
 
 button:hover {
-  cursor: pointer;
   background-color: #2342a4;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .correct,
 .correct:hover {
   background-color: #52c952;
-  color: #ffffff;
   border-color: #52c952;
+  color: #ffffff;
 }
 
 .incorrect,
 .incorrect:hover {
   background-color: #f23a3a;
-  color: #ffffff;
   border-color: #f23a3a;
+  color: #ffffff;
 }
 
 .result-section {
-  padding-top: 30px;
   margin-bottom: 10px;
+  padding-top: 30px;
 }
 
 /*Styling for footer section on all pages*/
 footer {
   color: #ffffff;
-  width: 100%;
   margin-bottom: 10px;
+  width: 100%;
 }
 
 footer ul {
@@ -130,8 +130,8 @@ footer ul {
 }
 
 footer li {
-  padding: 15px 4%;
   font-size: 20px;
+  padding: 15px 4%;
 }
 
 footer a {
@@ -152,10 +152,10 @@ p {
 }
 
 #lets-play-button {
-  color: #2342a4;
-  margin: 10px;
   border: 1px solid #2342a4;
   border-radius: 10px;
+  color: #2342a4;
+  margin: 10px;
   padding: 8px;
 }
 
@@ -166,11 +166,11 @@ p {
 /*Responsiveness on small devices styling*/
 @media screen and (max-width: 950px) {
   h1 {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .nav-list-item {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .container {
