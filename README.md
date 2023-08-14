@@ -48,6 +48,7 @@ If the incorrect answer is selected, the selected option will turn red. The scor
 
 - Question options - I would like to add more question images and options to make the quiz bigger and more engaging.
 - High Score Record - I would like to add a page which keeps a record of the names of the players with the highest scores.
+- Links to learn-more - I would like to add links to each of the artists mentioned in the quiz so the user can easily learn more about an artwork or artist that they liked, further supporting the purpose of the project to educate people about Great Women Artists.
 
 ### Typography and Color
 
@@ -57,18 +58,22 @@ If the incorrect answer is selected, the selected option will turn red. The scor
 
 ### Wireframes
 
+- As the wireframes show, the idea for the project was to keep it as simple as possible. The site loads the quiz immediately. No time limit to answer each question was included so the user has time to think and read all the names in the options. The result area appears when the user reaches the end of the quiz. The About page was added to the project as the it being developed. The wireframes were made using wireframepro.mockflow.com.
+
+<img src="readme/question-area-wireframes.png">
+<img src="readme/end-of-quiz-result-area.png">
+
 ### Technology
 
-GitHub Desktop
-VS Code
-CSS, HTML, JavaScript
-GoogleFonts
-Google Fonts
-SheCodes for Background gradient code
-https://wireframepro.mockflow.com/ - for wireframe design
-FontAwesome for social media links
-https://www.iloveimg.com/ - to resize images
-https://ui.dev/amiresponsive - to check site responsiveness
+- GitHub Desktop for commits/deploys
+- VS Code
+- CSS, HTML, JavaScript
+- GoogleFonts
+- SheCodes for Background gradient code
+- https://wireframepro.mockflow.com/ - for wireframe design
+- FontAwesome for social media links
+- https://www.iloveimg.com/ - to resize images
+- https://ui.dev/amiresponsive - to check site responsiveness
 
 ### Testing
 
@@ -80,6 +85,41 @@ https://ui.dev/amiresponsive - to check site responsiveness
 
 ### Deployment
 
+#### VS Code:
+
+- I used the Code Institute template available on GitHub with VS Code as the editor for this project.
+
+1. Create the file on the desktop
+2. Open it in the VS Code desktop programme
+3. Add the HTML files, Javascript files and assets folder with CSS file and images for the quiz.
+
+#### GitHub Desktop application
+
+- I used this application to conveniently commit and push changes to the GitHub repository for this project.
+
+#### GitHub pages for deployment
+
+- The steps I took to deploy the project:
+
+1. naviagate to Settings on the GitHub repo page
+2. click on Pages
+3. click deploy from branch.
+
+I had to manually update the repo each time by:
+
+1. clicking on the 'Last deployed' link on the Pages page
+2. clicking on 'Re-run all jobs' on the Actions page
+
+The live link can be found here:
+
+#### To clone the repo:
+
+1. On GitHub click on the green <> Code button,
+2. In the dropdown menu select Local and copy the url for the repository.
+3. Create a file on your desktop and right click to open with code, ie VS Code, your local environment.
+4. On the welcome page select the option Clone Git Repo and paste the URL.
+5. Save it to the folder you created on your desktop.
+
 ### Credits
 
 #### Content
@@ -90,4 +130,4 @@ https://ui.dev/amiresponsive - to check site responsiveness
 
 #### Media
 
-- Images sourced from Google with the Creative Commons License and used solely for educational purposes
+- Images sourced from Google with the Creative Commons License and used solely for educational purposes.
