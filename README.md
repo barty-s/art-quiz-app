@@ -48,7 +48,7 @@ If the incorrect answer is selected, the selected option will turn red. The scor
 
 - Question options - I would like to add more question images and options to make the quiz bigger and more engaging.
 - High Score Record - I would like to add a page which keeps a record of the names of the players with the highest scores.
-- Links to learn-more - I would like to add links to each of the artists mentioned in the quiz so the user can easily learn more about an artwork or artist that they liked, further supporting the purpose of the project to educate people about Great Women Artists.
+- Links to learn-more - I would like to add wikipedia links for each of the artists mentioned in the quiz so the user can easily learn more about an artwork or artist that they might like, further supporting the purpose of the project to educate people about Great Women Artists.
 
 ### Typography and Color
 
@@ -105,18 +105,18 @@ If the incorrect answer is selected, the selected option will turn red. The scor
 2. click on Pages
 3. click deploy from branch.
 
-I had to manually update the repo each time by:
+I sometimes had to manually update the repository by:
 
 1. clicking on the 'Last deployed' link on the Pages page
 2. clicking on 'Re-run all jobs' on the Actions page
 
-The live link can be found here:
+The live link can be found here: https://barty-s.github.io/art-quiz-app/index.html
 
 #### To clone the repo:
 
 1. On GitHub click on the green <> Code button,
 2. In the dropdown menu select Local and copy the url for the repository.
-3. Create a file on your desktop and right click to open with code, ie VS Code, your local environment.
+3. Create a file on your desktop and right click to open with code, ie your local environment.
 4. On the welcome page select the option Clone Git Repo and paste the URL.
 5. Save it to the folder you created on your desktop.
 
