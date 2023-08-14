@@ -8,7 +8,7 @@ This is an art quiz app intended to test the user's knowledge of Great Women Art
 
 ### User Stories
 
-- Home Page - As a visiting user, I want to be able to start the quiz immediately without having to introduce my name or age. I want to see the correct or incorrect answer after making my selection and I want to see my score recorded.
+- Home Page - As a visiting user, I want to be able to start the quiz immediately. I want to see the correct or incorrect answer after making my selection and I want to see my score recorded.
 
 - End Section - As a visiting user, I want to see my final result after completing the quiz and have the option to take the quiz again.
 
@@ -24,7 +24,7 @@ This is an art quiz app intended to test the user's knowledge of Great Women Art
 
 <img src="readme/game-section.png">
 
-If the correct answer is selected, the option will turn green and the score tally at the bottom of the page will increase by 1. There is timeout handler to allow the user to process if they chose the correct/incorrect answer. The next image will then be shown.
+If the correct answer is selected, the option will turn green and the score tally at the bottom of the page will increase by 1. There is a timeout handler to allow the user to see if they have chosen the correct/incorrect answer. The next image will then be shown.
 
 <img src="readme/correct-answer.png">
 
@@ -58,10 +58,13 @@ If the incorrect answer is selected, the selected option will turn red. The scor
 
 ### Wireframes
 
-- As the wireframes indicate, the idea for the project was to keep it as simple as possible. The site loads the quiz immediately. No time limit to answer each question was included so the user has time to think and read all the names in the options. The result area appears when the user reaches the end of the quiz. The About page was added to the project as it was being developed and built.
+- As the wireframes indicate, the idea for the project was to keep it as simple as possible. The site loads the quiz immediately. No time limit to answer each question was included so the user has time to study the image and read all the names in the options. The result area appears when the user reaches the end of the quiz. The About page was added to the project as it was being developed and built and so is not included in the wireframes.
 - The wireframes were made using wireframepro.mockflow.com.
 
+· Game Section - small/large screen devices
 <img src="readme/question-area-wireframes.png">
+
+·End of Game Section - small/large screen devices
 <img src="readme/end-of-quiz-result-area.png">
 
 ### Technology
@@ -95,8 +98,7 @@ If the incorrect answer is selected, the selected option will turn red. The scor
 5. Below the artist options the user will see their score tally. This will increase by one if they answer correctly, or remain unchanged if they answer incorrectly. The total number of questions in the quiz is eight. However, there are 18 images for the quiz to randomly select from, therefore ensuring the user can play multiple times without the risk of having every question repeated.
 6. The user will then see the footer which has three icons for social media websites and the author's line with links to their LinkedIn profile and the GitHub repository for the quiz. All links open in a new tab.
 
-<img src="readme/play-responsive.png">
-<img src="readme/play-mini.png">
+<img src="readme/play-responsive.png"> <img src="readme/play-mini.png">
 
 ##### End Section
 
@@ -104,8 +106,7 @@ If the incorrect answer is selected, the selected option will turn red. The scor
 2. The user will see a message congratulating them on finishing the quiz. They will see their total correct score. And they will see a button inviting them to take the quiz again.
 3. On clicking the Take Quiz Again button, the screen will refresh and the quiz will start from 0 again.
 
-<img src="readme/end-responsive.png">
-<img src="readme/end-mini.png">
+<img src="readme/end-responsive.png"> <img src="readme/end-mini.png">
 
 #### About Page
 
@@ -114,8 +115,7 @@ If the incorrect answer is selected, the selected option will turn red. The scor
 3. The user will see a brief explanation of the inspiration behind the quiz which contains a link to 'The Story of Art Without Men' book website which opens in a new tab.
 4. The user will then see a button 'Let's Play'. When clicked, the user will be navigated back to the Play page, the main page of the site, where they can begin the quiz.
 
-<img src="readme/about-responsive.png">
-<img src="readme/about-mini.png">
+<img src="readme/about-responsive.png"> <img src="readme/about-mini.png">
 
 ### Supported Screens and Browsers
 
