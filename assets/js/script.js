@@ -7,7 +7,6 @@
 let gameSection = document.getElementById("container");
 let answerOptions = Array.from(document.getElementsByClassName("options-text"));
 let currentQuestion = {};
-let acceptAnswers = false;
 let score = 0;
 let listOfQuestions = [];
 let questions = [
@@ -163,7 +162,6 @@ let totalQuestions = 7;
 
 // Main function to run the game, it calls the function that displays the questions
 function startGame() {
-  score = 0;
   listOfQuestions = [...questions];
   displayNewQuestion();
 }
@@ -173,7 +171,7 @@ function startGame() {
  * If the question limit has been reached, the final result will be shown.
  */
 function displayNewQuestion() {
-  //to display the final result
+  //when to display the final result
   if (questionCounter > totalQuestions) {
     displayEndSection();
   }
@@ -194,8 +192,6 @@ function displayNewQuestion() {
 
   //splice the question just shown out of the array so it won't be shown again,
   listOfQuestions.splice(questionIndex, 1);
-
-  acceptAnswers = true;
 }
 
 //Funtion called when question limit has been reached - shows final score and play again button (original code)
@@ -210,8 +206,6 @@ function displayEndSection() {
 //to loop through the answer options
 answerOptions.forEach(function (answerOption) {
   answerOption.addEventListener("click", (e) => {
-    if (!acceptAnswers) return;
-    acceptAnswers = false;
     let selectedOption = e.target;
 
     //to show the number of the option selected by the user
