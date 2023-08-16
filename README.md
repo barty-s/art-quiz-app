@@ -176,6 +176,8 @@ The live link can be found here: https://barty-s.github.io/art-quiz-app/index.ht
   While using this tutorial as a learning tool for this project, the code was customised as much as possible to fit the scope of the Art Quiz app project and to ensure plagiarism was avoided.
 - https://stackoverflow.com/questions/5480945/refreshing-page-on-click-of-a-buttons - this site helped solve the problem I had with the code for restarting the quiz with the button click.
 - https://css-tricks.com/snippets/css/a-guide-to-flexbox/#aa-background - this site breaks down the specificities of flexbox.
+- https://www.freecodecamp.org/news/three-dots-operator-in-javascript/ - for explanation of the three dot spread operator in JavaScript
+- https://www.w3schools.com/js/js_arrow_function.asp - for explanation of the arrow function in JavaScript
 
 #### Media
 

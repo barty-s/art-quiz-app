@@ -162,6 +162,7 @@ let totalQuestions = 7;
 
 // Main function to run the game, it calls the function that displays the questions
 function startGame() {
+  //use spread operator
   listOfQuestions = [...questions];
   displayNewQuestion();
 }
@@ -178,6 +179,7 @@ function displayNewQuestion() {
 
   questionCounter++;
 
+  //to display a question at random from the question list
   let questionIndex = Math.floor(Math.random() * listOfQuestions.length);
   currentQuestion = listOfQuestions[questionIndex];
 
@@ -185,6 +187,7 @@ function displayNewQuestion() {
   questionImage.setAttribute("src", `assets/images/${currentQuestion.img}`);
 
   //to display the answer options associated with each image
+  //use arrow function
   answerOptions.forEach((answerOption) => {
     let number = answerOption.dataset["option"];
     answerOption.innerText = currentQuestion["option" + number];
@@ -199,6 +202,7 @@ function displayEndSection() {
   gameSection.innerHTML = `
   <h2>Thank you for playing!</h2>
   <h3>🎉 Your score is ${score} 🎉</h3>
+  <br>
   <button id="start-again" onClick="window.location.reload();">Take Quiz Again</button>
   `;
 }
