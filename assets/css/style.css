@@ -197,4 +197,9 @@ p {
   .result-section {
     font-size: 14px;
   }
+
+  footer,
+  footer li {
+    font-size: 14px;
+  }
 }
