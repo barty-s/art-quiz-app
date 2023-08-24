@@ -30,7 +30,7 @@
             <a
               href="about.html"
               title="link to about page"
-              onclick="aboutPage();"
+              onclick="return confirm('Are you sure you want to leave the quiz?')"
               >About</a
             >
           </li>
@@ -54,6 +54,15 @@
           <button class="options-text" data-option="4">Option 4</button>
         </div>
       </div>
+    </div>
+    <!--End Section-->
+    <div class="hidden" id="end-section">
+      <h2>Thank you for playing!</h2>
+      <h3>🎉 Your score is <span id="final-score"> </span>🎉</h3>
+      <br />
+      <button id="start-again" onClick="window.location.reload();">
+        Take Quiz Again
+      </button>
     </div>
     <!-- Footer Section -->
     <footer>

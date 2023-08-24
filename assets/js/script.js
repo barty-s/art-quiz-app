@@ -1,12 +1,10 @@
-/**
- * This code was inspired by and customised from the video tutorial 'Create a Quiz App using HTML, CSS & JavaScript',
- * by CodeGeek https://www.youtube.com/watch?v=Opje9VBrNfg&t=1791s
- */
+//List of questions imported from external JS file (original code)
+import { QUESTIONS } from "./questions.js";
 
 //List of variables to be used throughout the javascript code
-import { questions } from "./questions.js";
-
 let gameSection = document.getElementById("container");
+let endSection = document.getElementById("end-section");
+let finalScore = document.getElementById("final-score");
 let answerOptions = Array.from(document.getElementsByClassName("options-text"));
 let currentQuestion = {};
 let score = 0;
@@ -16,10 +14,9 @@ let scoreText = document.getElementById("score");
 let questionCounter = 0;
 let totalQuestions = 7;
 
-// Main function to run the game, it calls the function that displays the questions
+// Main function to run the game, it calls the function that displays the questions using spread operator
 function startGame() {
-  //use spread operator
-  listOfQuestions = [...questions];
+  listOfQuestions = [...QUESTIONS];
   displayNewQuestion();
 }
 
@@ -55,12 +52,10 @@ function displayNewQuestion() {
 
 //Funtion called when question limit has been reached - shows final score and play again button (original code)
 function displayEndSection() {
-  gameSection.innerHTML = `
-  <h2>Thank you for playing!</h2>
-  <h3>🎉 Your score is ${score} 🎉</h3>
-  <br>
-  <button id="start-again" onClick="window.location.reload();">Take Quiz Again</button>
-  `;
+  gameSection.classList.add("hidden");
+  endSection.classList.remove("hidden");
+  endSection.classList.add("container");
+  finalScore.innerHTML = `${score}`;
 }
 
 //to loop through the answer options
@@ -93,10 +88,6 @@ answerOptions.forEach(function (answerOption) {
 function increaseScore(num) {
   score += num;
   scoreText.innerText = score;
-}
-
-function aboutPage() {
-  confirm("Are you sure you want to leave the current quiz?");
 }
 
 startGame();

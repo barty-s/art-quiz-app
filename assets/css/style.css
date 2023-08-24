@@ -119,6 +119,10 @@ button:hover {
   padding-top: 10px;
 }
 
+.hidden {
+  display: none;
+}
+
 /*Styling for footer section on all pages*/
 footer {
   color: #ffffff;

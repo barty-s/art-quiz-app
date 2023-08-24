@@ -1,4 +1,4 @@
-export let questions = [
+export const QUESTIONS = [
   {
     img: "rosalba-carriera.jpg",
     option1: "Rosalba Carriera",
