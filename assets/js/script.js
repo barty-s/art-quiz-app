@@ -4,22 +4,13 @@
  */
 
 //List of variables to be used throughout the javascript code
+import { questions } from "./questions.js";
+
 let gameSection = document.getElementById("container");
 let answerOptions = Array.from(document.getElementsByClassName("options-text"));
 let currentQuestion = {};
 let score = 0;
 let listOfQuestions = [];
-let questions = [];
-
-fetch("question.json")
-  .then((res) => {
-    return res.json();
-  })
-  .then((loadedQuestions) => {
-    questions = loadedQuestions;
-    startGame();
-  });
-
 let questionImage = document.getElementById("question-image");
 let scoreText = document.getElementById("score");
 let questionCounter = 0;
@@ -30,10 +21,6 @@ function startGame() {
   //use spread operator
   listOfQuestions = [...questions];
   displayNewQuestion();
-}
-
-function aboutPage() {
-  confirm("Are you sure you want to leave the current quiz?");
 }
 
 /**
@@ -107,3 +94,9 @@ function increaseScore(num) {
   score += num;
   scoreText.innerText = score;
 }
+
+function aboutPage() {
+  confirm("Are you sure you want to leave the current quiz?");
+}
+
+startGame();
