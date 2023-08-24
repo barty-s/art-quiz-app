@@ -27,7 +27,12 @@
             <a href="index.html" title="link to quiz homepage">Play</a>
           </li>
           <li class="nav-list-item">
-            <a href="about.html" title="link to about page">About</a>
+            <a
+              href="about.html"
+              title="link to about page"
+              onclick="aboutPage()"
+              >About</a
+            >
           </li>
         </ul>
       </nav>
@@ -35,6 +40,9 @@
     <!-- Game section -->
     <div class="container" id="container">
       <h2>Name the artist</h2>
+      <div class="result-section">
+        Your score is: <span id="score">0</span>/8
+      </div>
       <div id="game-section">
         <div id="image-div">
           <img id="question-image" src="#" alt="quiz-image" />
@@ -44,9 +52,6 @@
           <button class="options-text" data-option="2">Option 2</button>
           <button class="options-text" data-option="3">Option 3</button>
           <button class="options-text" data-option="4">Option 4</button>
-        </div>
-        <div class="result-section">
-          Your score is: <span id="score">0</span>/8
         </div>
       </div>
     </div>

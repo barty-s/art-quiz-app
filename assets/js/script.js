@@ -167,6 +167,10 @@ function startGame() {
   displayNewQuestion();
 }
 
+function aboutPage() {
+  confirm("Are you sure you want to leave the current quiz?");
+}
+
 /**
  * Function to generate a new question, randomly selected from list of questions.
  * If the question limit has been reached, the final result will be shown.

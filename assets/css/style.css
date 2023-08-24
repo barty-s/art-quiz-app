@@ -81,7 +81,7 @@ nav a:visited {
   flex-flow: row wrap;
   gap: 10px;
   justify-content: center;
-  margin-top: 25px;
+  margin: 25px 0 auto;
 }
 
 .options-text,
@@ -91,6 +91,7 @@ nav a:visited {
   border-radius: 5px;
   color: #2342a4;
   padding: 10px;
+  width: 200px;
 }
 
 button:hover {
@@ -115,7 +116,7 @@ button:hover {
 
 .result-section {
   margin-bottom: 10px;
-  padding-top: 30px;
+  padding-top: 10px;
 }
 
 /*Styling for footer section on all pages*/
@@ -169,6 +170,13 @@ p {
     font-size: 14px;
   }
 
+  h2 {
+    font-size: 16px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
   .nav-list-item {
     font-size: 12px;
   }
@@ -176,5 +184,13 @@ p {
   .container {
     margin: 70px auto 10px;
     width: 85%;
+  }
+
+  .options-text {
+    width: 230px;
+  }
+
+  .result-section {
+    font-size: 14px;
   }
 }
