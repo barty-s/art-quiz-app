@@ -9,152 +9,17 @@ let answerOptions = Array.from(document.getElementsByClassName("options-text"));
 let currentQuestion = {};
 let score = 0;
 let listOfQuestions = [];
-let questions = [
-  {
-    img: "rosalba-carriera.jpg",
-    option1: "Rosalba Carriera",
-    option2: "Johann Zaffany",
-    option3: "Angelica Kauffman",
-    option4: "Mary Moser",
-    answer: 1,
-  },
-  {
-    img: "lady-butler.jpg",
-    option1: "Marie Denise Villers",
-    option2: "Anna Klumpke",
-    option3: "Rosa Bonheur",
-    option4: "Lady Butler",
-    answer: 4,
-  },
-  {
-    img: "frida-kahlo.jpg",
-    option1: "Leonora Carrington",
-    option2: "Frida Kahlo",
-    option3: "Kara Leonor Fini",
-    option4: " Eileen Agar",
-    answer: 2,
-  },
-  {
-    img: "georgia-o-keeffe.jpg",
-    option1: "Anna Valdez",
-    option2: "Georgia O Keeffe",
-    option3: "Faith Wilding",
-    option4: "Camilla Engstrom",
-    answer: 2,
-  },
-  {
-    img: "ellen-harding-baker.jpg",
-    option1: "Emma Civey Stahl",
-    option2: "Harriet Powers",
-    option3: "Ellen Harding Baker",
-    option4: "Edmonia Lewis",
-    answer: 3,
-  },
-  {
-    img: "anna_atkins.jpg",
-    option1: "Anna Atkins",
-    option2: "Emily Mary Osborn",
-    option3: "Katsushika Oi",
-    option4: "Joanna Boyce Wells",
-    answer: 1,
-  },
-  {
-    img: "hilma-af-klint.jpg",
-    option1: "Tracy Thomason",
-    option2: "Leah Guadagnoli",
-    option3: "Georgiana Houghton",
-    option4: "Hilma Af Klint",
-    answer: 4,
-  },
-  {
-    img: "berthe-morisot.jpg",
-    option1: "Camille Claudel",
-    option2: "Marie Braquemond",
-    option3: "Berthe Morisot",
-    option4: "Mary Cassatt",
-    answer: 3,
-  },
-  {
-    img: "georgette-chen.jpg",
-    option1: "Florine Stettheimer",
-    option2: "Georgette Chen",
-    option3: "Pan Yuliang",
-    option4: "Gwen John",
-    answer: 2,
-  },
-  {
-    img: "gabriele-munter.jpg",
-    option1: "Kathe Kollwitz",
-    option2: "Suzanne Valadon",
-    option3: "Jacqueline Marval",
-    option4: "Gabriele Munter",
-    answer: 4,
-  },
-  {
-    img: "kusama.jpg",
-    option1: "Yayoi Kusama",
-    option2: "Alma Thomas",
-    option3: "Etel Adnan",
-    option4: "Agnes Martin",
-    answer: 1,
-  },
-  {
-    img: "louise-bourgeois.jpg",
-    option1: "Niki de Saint Phalle",
-    option2: "Louise Bourgeois",
-    option3: "Yoko Ono",
-    option4: "Eva Hesse",
-    answer: 2,
-  },
-  {
-    img: "sonia-delaunay.jpg",
-    option1: "Natalia Goncharova",
-    option2: "Valentina Kulagina",
-    option3: "Sonia Delaunay",
-    option4: "Liubov Popova",
-    answer: 3,
-  },
-  {
-    img: "hannah-hoch.jpg",
-    option1: "Lotte Laserstein",
-    option2: "Jeanne Mammen",
-    option3: "Sophie Taeuber-Arp",
-    option4: "Hannah Hoch",
-    answer: 4,
-  },
-  {
-    img: "dora-maar.jpg",
-    option1: "Dora Maar",
-    option2: "Lee Miller",
-    option3: "Meret Oppenheim",
-    option4: "Eileen Agar",
-    answer: 1,
-  },
-  {
-    img: "dorothea-lange.jpg",
-    option1: "Hannah Ryggen",
-    option2: "Dorothea Lange",
-    option3: "Charlotte Salomon",
-    option4: "Kati Horna",
-    answer: 2,
-  },
-  {
-    img: "lee-krasner.jpg",
-    option1: "Elaine de Kooning",
-    option2: "Joan Mitchell",
-    option3: "Lee Krasner",
-    option4: "Helen Frankenthaler",
-    answer: 3,
-  },
-  {
-    img: "barbara-kruger.jpg",
-    option1: "Barbara Kruger",
-    option2: "Jenny Holzer",
-    option3: "Cindy Sherman",
-    option4: "Francesa Woodman",
-    answer: 1,
-  },
-];
+let questions = [];
+
+fetch("question.json")
+  .then((res) => {
+    return res.json();
+  })
+  .then((loadedQuestions) => {
+    questions = loadedQuestions;
+    startGame();
+  });
+
 let questionImage = document.getElementById("question-image");
 let scoreText = document.getElementById("score");
 let questionCounter = 0;
@@ -242,5 +107,3 @@ function increaseScore(num) {
   score += num;
   scoreText.innerText = score;
 }
-
-startGame();
