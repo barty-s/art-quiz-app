@@ -7,7 +7,6 @@ let endSection = document.getElementById("end-section");
 let finalScore = document.getElementById("final-score");
 let submitAnswer = document.getElementById("answer-submit-btn");
 let selectedOption = document.getElementById("selected");
-
 let answerOptions = Array.from(document.getElementsByClassName("options-text"));
 let currentQuestion = {};
 let score = 0;
@@ -65,12 +64,13 @@ function displayEndSection() {
 
 //to loop through the answer options
 answerOptions.forEach(function (answerOption) {
-  answerOption.addEventListener("click", (e) => {
-    let selectedOption = e.target;
-    selectedOption.id = "selected";
-    submitAnswer.classList.remove("hidden");
-  });
+  answerOption.addEventListener("click", selectOption);
 });
+
+function selectOption() {
+  this.id = "selected";
+  submitAnswer.classList.remove("hidden");
+}
 
 submitAnswer.addEventListener("click", submit);
 
