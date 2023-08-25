@@ -5,6 +5,9 @@ import { QUESTIONS } from "./questions.js";
 let gameSection = document.getElementById("container");
 let endSection = document.getElementById("end-section");
 let finalScore = document.getElementById("final-score");
+let submitAnswer = document.getElementById("answer-submit-btn");
+let selectedOption = document.getElementById("selected");
+
 let answerOptions = Array.from(document.getElementsByClassName("options-text"));
 let currentQuestion = {};
 let score = 0;
@@ -12,7 +15,7 @@ let listOfQuestions = [];
 let questionImage = document.getElementById("question-image");
 let scoreText = document.getElementById("score");
 let questionCounter = 0;
-let totalQuestions = 7;
+let totalQuestions = 2;
 
 // Main function to run the game, it calls the function that displays the questions using spread operator
 function startGame() {
@@ -48,6 +51,8 @@ function displayNewQuestion() {
 
   //splice the question just shown out of the array so it won't be shown again,
   listOfQuestions.splice(questionIndex, 1);
+
+  submitAnswer.classList.add("hidden");
 }
 
 //Funtion called when question limit has been reached - shows final score and play again button (original code)
@@ -62,27 +67,39 @@ function displayEndSection() {
 answerOptions.forEach(function (answerOption) {
   answerOption.addEventListener("click", (e) => {
     let selectedOption = e.target;
-
-    //to show the number of the option selected by the user
-    let selectedAnswer = selectedOption.dataset["option"];
-
-    //to check if the answer is correct or incorrect and increase score counter accordingly
-    let classToApply =
-      selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
-
-    if (classToApply === "correct") {
-      increaseScore(1);
-    }
-
-    selectedOption.classList.add(classToApply);
-
-    // to move on to the next question
-    setTimeout(() => {
-      selectedOption.classList.remove(classToApply);
-      displayNewQuestion();
-    }, 1000);
+    selectedOption.id = "selected";
+    submitAnswer.classList.remove("hidden");
   });
 });
+
+submitAnswer.addEventListener("click", submit);
+
+function submit() {
+  //to show the number of the option selected by the user
+  selectedOption = document.getElementById("selected");
+  let selectedAnswer = selectedOption.dataset["option"];
+
+  //to check if the answer is correct or incorrect and increase score counter accordingly
+  let classToApply =
+    selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
+
+  if (classToApply === "correct") {
+    increaseScore(1);
+    selectedOption.removeAttribute("id");
+  }
+
+  if (classToApply === "incorrect") {
+    selectedOption.removeAttribute("id");
+  }
+
+  selectedOption.classList.add(classToApply);
+
+  // to move on to the next question
+  setTimeout(() => {
+    selectedOption.classList.remove(classToApply);
+    displayNewQuestion();
+  }, 1000);
+}
 
 //Function to increase the score if user answers correctly
 function increaseScore(num) {

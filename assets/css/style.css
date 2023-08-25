@@ -85,7 +85,8 @@ nav a:visited {
 }
 
 .options-text,
-#start-again {
+#start-again,
+#answer-submit-btn {
   background: #ffffff;
   border-color: #2342a4;
   border-radius: 5px;
@@ -94,10 +95,16 @@ nav a:visited {
   width: 200px;
 }
 
-button:hover {
+button:hover,
+#answer-submit-btn:hover {
   background-color: #2342a4;
   color: #ffffff;
   cursor: pointer;
+}
+
+#selected {
+  background-color: #2342a4;
+  color: #ffffff;
 }
 
 .correct,
