@@ -20,6 +20,16 @@ let totalQuestions = 2;
 function startGame() {
   listOfQuestions = [...QUESTIONS];
   displayNewQuestion();
+
+  //to loop through the answer options
+  answerOptions.forEach(function (answerOption) {
+    answerOption.addEventListener("click", selectOption);
+  });
+}
+
+function selectOption() {
+  this.id = "selected";
+  submitAnswer.classList.remove("hidden");
 }
 
 /**
@@ -62,16 +72,6 @@ function displayEndSection() {
   finalScore.innerHTML = `${score}`;
 }
 
-//to loop through the answer options
-answerOptions.forEach(function (answerOption) {
-  answerOption.addEventListener("click", selectOption);
-});
-
-function selectOption() {
-  this.id = "selected";
-  submitAnswer.classList.remove("hidden");
-}
-
 submitAnswer.addEventListener("click", submit);
 
 function submit() {
@@ -107,4 +107,4 @@ function increaseScore(num) {
   scoreText.innerText = score;
 }
 
-startGame();
+addEventListener("DOMContentLoaded", startGame);
