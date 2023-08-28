@@ -41,7 +41,13 @@
       </div>
       <div id="game-section">
         <div id="image-div">
-          <img id="question-image" src="#" alt="quiz-image" />
+          <img
+            id="question-image"
+            style="display: none"
+            onload="this.style.display = 'block'"
+            src="#"
+            alt="quiz-image"
+          />
         </div>
         <div class="options-section">
           <button class="options-text" data-option="1">Option 1</button>
