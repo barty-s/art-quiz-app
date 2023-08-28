@@ -36,11 +36,11 @@ If the incorrect answer is selected, the selected option will turn red. The scor
 
 <img src="readme/incorrect-answer.png">
 
-- Game-End Section - When the user has seen/answered eight images, they will be presented with their total correct score and the option to take the quiz again.
+- Game-End Section - When the user has seen and answered eight images, they will be presented with their total correct score and the option to take the quiz again.
 
 <img src="readme/end-section.png">
 
-- About Section - this section explains the idea behind the quiz and the basic rules on how to play. It has a button with a link to navigate to the top of the game, the player's score, if they have already started the game, is not affected.
+- About Section - this section explains the idea behind the quiz and the basic rules on how to play. It has a button with a link to navigate to the top of the game. The player's score, if they have already started the game, is not affected.
 
 <img src="readme/about-section.png">
 
@@ -62,7 +62,8 @@ If the incorrect answer is selected, the selected option will turn red. The scor
 
 ### Wireframes
 
-- As the wireframes indicate, the idea for the project was to keep it as simple as possible. The site loads the quiz immediately. No time limit to answer each question was included so the user has time to study the image and read all the names in the options. The result area appears when the user reaches the end of the quiz. The About page was added to the project as it was being developed and built and so is not included in the wireframes.
+- As the wireframes indicate, the idea for the project was to keep it as simple as possible. The site loads the quiz immediately. No time limit to answer each question was included so the user has time to study the image and read all the names in the options well. The result area appears when the user reaches the end of the quiz. The About section was added to the project as it was being developed and built and so is not included in the wireframes.
+
 - The wireframes were made using wireframepro.mockflow.com.
 
 · Game Section - small/large screen devices
@@ -119,7 +120,7 @@ If the incorrect answer is selected, the selected option will turn red. The scor
 3. The user will see a brief explanation of the inspiration behind the quiz which contains a link to 'The Story of Art Without Men' book website which opens in a new tab.
 4. The user will then see a button 'Let's Play'. When clicked, the user will be navigated back to the Play page, the main page of the site, where they can begin the quiz.
 
-<img src="readme/about-responsive.png"> <img src="readme/about-mini.png">
+<img src="readme/about-responsive.png"> <img src="readme/about-responsive-2.png"> <img src="readme/about-mini.png">
 
 ### Supported Screens and Browsers
 
