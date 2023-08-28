@@ -27,17 +27,13 @@
             <a href="index.html" title="link to quiz homepage">Play</a>
           </li>
           <li class="nav-list-item">
-            <a
-              href="about.html"
-              title="link to about page"
-              onclick="return confirm('Are you sure you want to leave the quiz?')"
-              >About</a
-            >
+            <a href="#about" title="link to about section">About</a>
           </li>
         </ul>
       </nav>
     </header>
     <!-- Game section -->
+    <a name="play"></a>
     <div class="container" id="container">
       <h2>Name the artist</h2>
       <div class="result-section">
@@ -64,9 +60,47 @@
       <h2>Thank you for playing!</h2>
       <h3>🎉 Your score is <span id="final-score"> </span>🎉</h3>
       <br />
+      <br />
       <button id="start-again" onClick="window.location.reload();">
         Take Quiz Again
       </button>
+    </div>
+    <!--About Section-->
+    <a name="about"></a>
+    <div class="container about">
+      <h2>About</h2>
+
+      Women artists have been written out of art history for far too long.
+      <br />
+      <br />
+      Inspired by the recently published
+      <a
+        href="https://www.thegreatwomenartists.com/book"
+        target="_blank"
+        title="link to book website"
+        id="book-link"
+        >'The Story of Art Without Men'</a
+      >
+      by art historian Katy Hessel, this quiz will test your knowledge of the
+      great women artists of yesterday and today.
+      <br />
+      <br />
+      <h3>The Rules of the Game</h3>
+      Each image has four options to choose from.
+      <br />
+      One option is the correct answer and other three are contemporaries of the
+      artist or artists inspired by her work.
+      <br />
+      Select and option and click submit to see how well you know the Great
+      Women Artists.
+      <br />
+      <br />
+      🎨 We hope you have fun and discover a lot about Great Women Artists 🎨
+      <br />
+      <br />
+      <a href="#play" id="lets-play-button" title="link to play section"
+        >Let's Play!</a
+      >
     </div>
     <!-- Footer Section -->
     <footer>
