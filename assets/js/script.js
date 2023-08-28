@@ -6,7 +6,7 @@ let gameSection = document.getElementById("container");
 let endSection = document.getElementById("end-section");
 let finalScore = document.getElementById("final-score");
 let submitAnswer = document.getElementById("answer-submit-btn");
-let selectedOption = document.getElementById("selected");
+let selectedOption = null;
 let answerOptions = Array.from(document.getElementsByClassName("options-text"));
 let currentQuestion = {};
 let score = 0;
@@ -27,8 +27,15 @@ function startGame() {
   });
 }
 
+// Function to handle the selection of an answer option
 function selectOption() {
-  this.id = "selected";
+  // If an option is already selected, deselect it
+  if (selectedOption) {
+    selectedOption.classList.remove("selected");
+  }
+  // Set the selected option to the clicked option
+  selectedOption = this;
+  selectedOption.classList.add("selected");
   submitAnswer.classList.remove("hidden");
 }
 
@@ -75,8 +82,10 @@ function displayEndSection() {
 submitAnswer.addEventListener("click", submit);
 
 function submit() {
+  if (!selectedOption) {
+    return;
+  }
   //to show the number of the option selected by the user
-  selectedOption = document.getElementById("selected");
   let selectedAnswer = selectedOption.dataset["option"];
 
   //to check if the answer is correct or incorrect and increase score counter accordingly
@@ -85,11 +94,6 @@ function submit() {
 
   if (classToApply === "correct") {
     increaseScore(1);
-    selectedOption.removeAttribute("id");
-  }
-
-  if (classToApply === "incorrect") {
-    selectedOption.removeAttribute("id");
   }
 
   selectedOption.classList.add(classToApply);
@@ -97,6 +101,7 @@ function submit() {
   // to move on to the next question
   setTimeout(() => {
     selectedOption.classList.remove(classToApply);
+    selectedOption.classList.remove("selected");
     displayNewQuestion();
   }, 1000);
 }

@@ -102,7 +102,7 @@ button:hover,
   cursor: pointer;
 }
 
-#selected {
+.selected {
   background-color: #2342a4;
   color: #ffffff;
 }

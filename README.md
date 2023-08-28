@@ -181,6 +181,7 @@ The live link can be found here: https://barty-s.github.io/art-quiz-app/index.ht
 - https://sabe.io/blog/javascript-yes-no-confirmation-box and https://stackoverflow.com/questions/32394684/how-to-confirm-and-call-function-with-onclick - for explanation of Confirm box in JavaScript
 - https://www.scaler.com/topics/javascript/import-js-file-in-js/ - for explanation of linking two JS files
 - https://stackoverflow.com/questions/54358737/add-and-remove-id-by-pure-javascript - for explanation on adding/removing IDs
+- Craig Hudson in the CI slack community who helped me fix a bug on the select answer options
 
 #### Media
 
