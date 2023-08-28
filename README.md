@@ -113,7 +113,7 @@ If the incorrect answer is selected, the selected option will turn red. The scor
 
 <img src="readme/end-responsive.png"> <img src="readme/end-mini.png">
 
-#### About Page
+#### About Section
 
 1. When the user clicks the 'About' link in the nav-bar, they will be directed to the About page.
 2. They will see the same nav-bar and footer as on the home page.
