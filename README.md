@@ -12,17 +12,21 @@ This is an art quiz app intended to test the user's knowledge of Great Women Art
 
 - End Section - As a visiting user, I want to see my final result after completing the quiz and have the option to take the quiz again.
 
-- About Page - As a visiting user, I want to learn more about the quiz and find a link for further information about Great Women Artists.
+- About Section - As a visiting user, I want to learn more about the quiz and the rules for how to play. I want to find a link for further information about Great Women Artists.
 
 ### Features
 
-- Nav Bar - the same nav-bar design appears on both pages of the site. The title of the quiz is visible in larger text and directly underneath are links taking the user to the About page or the Play page.
+- Nav Bar - The title of the quiz is visible in larger text and directly underneath are links taking the user to the About section or the Play section. The user's score is not lost on navigating to the About section. The game is refreshed on clicking the 'Play' link.
 
 <img src="readme/nav-bar.png">
 
-- Game Start Section - The user is presented with an image immediately on page load and can choose between four artists' names.
+- Game Start Section - The user can immediatly see the main question to answer in the game. They then see their score. It placed at the top to allow for greater user focus. The user is then presented with an image immediately on page load and can choose between four artists' names.
 
 <img src="readme/game-section.png">
+
+On clicking one answer option, it is highlighted in blue and the button to submit the answer appears.
+
+<img src="readme/select-answer-submit.png">
 
 If the correct answer is selected, the option will turn green and the score tally at the bottom of the page will increase by 1. There is a timeout handler to allow the user to see if they have chosen the correct/incorrect answer. The next image will then be shown.
 
@@ -36,13 +40,13 @@ If the incorrect answer is selected, the selected option will turn red. The scor
 
 <img src="readme/end-section.png">
 
-- Footer - The same footer structure is used on both pages. There are links to the typical social media sites and links to the coder's LinkedIn and the site's GitHub Repository page.
-
-<img src="readme/footer.png">
-
-- About Page - this page explains the idea behind the quiz and has a button with a link to start the quiz.
+- About Section - this section explains the idea behind the quiz and the basic rules on how to play. It has a button with a link to navigate to the top of the game, the player's score, if they have already started the game, is not affected.
 
 <img src="readme/about-section.png">
+
+- Footer - There are links to the typical social media sites and links to the coder's LinkedIn and the site's GitHub Repository page.
+
+<img src="readme/footer.png">
 
 ### Future Features
 
