@@ -208,10 +208,10 @@ The live link can be found here: https://barty-s.github.io/art-quiz-app/index.ht
   - Use of external JS file for quiz questions is original code
   - Variables list customized from 'Create a Quiz App using HTML, CSS & JavaScript' video by CodeGeek
   - function initializeAnswerOption() - original code
-  - function selectOption() - customized code that Craig Hudson (Slack community) helped me with
-  - function displayNewQuestion() - customized from 'Create a Quiz App using HTML, CSS & JavaScript' video by CodeGeek and includes original code for image selection and display
+  - function selectOption() - customized code that Craig Hudson (Slack community) helped me with and original code for submitAnswer
+  - function displayNewQuestion() - customized from 'Create a Quiz App using HTML, CSS & JavaScript' video by CodeGeek and includes original code for image selection and display an submitAnswer
   - function answerText() - customized from 'Create a Quiz App using HTML, CSS & JavaScript' video by CodeGeek
   - function displayEndSection() - original code
-  - function submit() - combination of customised code 'Create a Quiz App using HTML, CSS & JavaScript' video by CodeGeek and help from Craig Hudson on Slack
+  - function submit() - combination of customized code 'Create a Quiz App using HTML, CSS & JavaScript' video by CodeGeek and help from Craig Hudson on Slack
   - function increaseScore() - customized from 'Create a Quiz App using HTML, CSS & JavaScript' video by CodeGeek
   - function startGame() - customized from 'Create a Quiz App using HTML, CSS & JavaScript' video by CodeGeek and includes original code for forEach function

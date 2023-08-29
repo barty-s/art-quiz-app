@@ -6,7 +6,7 @@ let gameSection = document.getElementById("container");
 let endSection = document.getElementById("end-section");
 let finalScore = document.getElementById("final-score");
 let submitAnswer = document.getElementById("answer-submit-btn");
-let selectedOption = null;
+let selectedOption;
 let answerOptions = Array.from(document.getElementsByClassName("options-text"));
 let currentQuestion = {};
 let score = 0;
