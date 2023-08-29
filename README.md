@@ -129,11 +129,11 @@ If the incorrect answer is selected, the selected option will turn red. The scor
 
 ### Bug Fixes
 
-- After testing the HTML code for the site, I had to fix two minor errors on the <image> element - I had to include the alt and the src attributes. I also had to fix the jump links by using the more up-to-date 'id' link rather than 'name'. No other errors were found.
+- After testing the HTML code for the site, I had to fix two minor errors on the image element - I had to include the alt and the src attributes. I also had to fix the jump links by using the more up-to-date 'id' link rather than 'name'. No other errors were found.
 
-- After testing the CSS code for the site, I had to fix one minor error on the <image> element - I had to correct the value for max-height. No other errors were found.
+- After testing the CSS code for the site, I had to fix one minor error on the image element - I had to correct the value for max-height. No other errors were found.
 
-- After testing the JavaScript code for the site, I had to fix one minor error - I had declared a variable for container/gameSecton but had never used it in the code. So, I updated the function displayEndSection() to fix the bug.
+- After testing the JavaScript code for the site, I had to fix one minor error - I had declared a variable for container/gameSecton but had never used it in the code. So, I updated the function displayEndSection() to fix the bug. I also used the dot notation for option as recommended by jshint.com after testing the site.
 
 ### Deployment
 
@@ -197,7 +197,7 @@ The live link can be found here: https://barty-s.github.io/art-quiz-app/index.ht
 
 - HTML:
 
-  - The first <div class="container"> is customized from 'Create a Quiz App using HTML, CSS & JavaScript' video by CodeGeek
+  - The first div class="container" is customized from 'Create a Quiz App using HTML, CSS & JavaScript' video by CodeGeek
   - The rest of the HTML code is original code
 
 - CSS:

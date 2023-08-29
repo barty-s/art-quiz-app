@@ -58,7 +58,7 @@ function displayNewQuestion() {
 
 //to display the text for each answer
 function answerText(answerOption) {
-  let number = answerOption.dataset["option"];
+  let number = answerOption.dataset.option;
   answerOption.innerText = currentQuestion["option" + number];
 }
 
@@ -78,7 +78,7 @@ function submit() {
     return;
   }
   //to show the number of the option selected by the user
-  let selectedAnswer = selectedOption.dataset["option"];
+  let selectedAnswer = selectedOption.dataset.option;
 
   //to check if the answer is correct or incorrect and increase score counter accordingly
   let classToApply =
