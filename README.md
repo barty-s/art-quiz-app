@@ -176,19 +176,42 @@ The live link can be found here: https://barty-s.github.io/art-quiz-app/index.ht
 
 #### Content
 
-- 'Create a Quiz App using HTML, CSS & JavaScript' by CodeGeek https://www.youtube.com/watch?v=Opje9VBrNfg&t=1791s - this video was used for the structure of the Javascript code. While using this tutorial as a learning tool for this project, the code was customised as much as possible to fit the scope of the Art Quiz app project and to ensure plagiarism was avoided.
-- https://stackoverflow.com/questions/5480945/refreshing-page-on-click-of-a-buttons - this site helped solve the problem I had with the code for restarting the quiz with the button click.
-- https://css-tricks.com/snippets/css/a-guide-to-flexbox/#aa-background - this site breaks down the specificities of flexbox.
-- https://www.freecodecamp.org/news/three-dots-operator-in-javascript/ - for explanation of the three dot spread operator in JavaScript
-- https://www.w3schools.com/js/js_arrow_function.asp - for explanation of the arrow function in JavaScript
-- https://www.scaler.com/topics/javascript/import-js-file-in-js/ - for explanation of linking two JS files
-- https://stackoverflow.com/questions/54358737/add-and-remove-id-by-pure-javascript - for explanation on adding/removing classes
-- https://stackoverflow.com/questions/49104207/how-to-prevent-broken-image-appearing-while-loading-my-real-image-from-server-in - for explanation on how to remove broken image icon on page load
-- Many thanks to Craig Hudson from the CI Slack community who helped me fix a bug on the select answer options
-- And many many thanks to my CI mentor Rohit Sharma for his expert advice on industry standards and best practices.
+- 'Create a Quiz App using HTML, CSS & JavaScript' by CodeGeek https://www.youtube.com/watch?v=Opje9VBrNfg&t=1791s - this video was used for the structure of the Javascript code. While using this tutorial as a learning tool for this project, the code was customised as much as possible to fit the scope of the Art Quiz app project and to ensure plagiarism was avoided
+- https://stackoverflow.com/questions/5480945/refreshing-page-on-click-of-a-buttons - I used this site to solve the problem I had with the code for restarting the quiz with the button click
+- https://css-tricks.com/snippets/css/a-guide-to-flexbox/#aa-background - I used this site to understand the specificities of Flexbox
+- https://www.freecodecamp.org/news/three-dots-operator-in-javascript/ - I used this site for an explanation of the three dot spread operator in JavaScript
+- https://www.w3schools.com/js/js_arrow_function.asp - I used this site for an explanation of the arrow function in JavaScript
+- https://www.scaler.com/topics/javascript/import-js-file-in-js/ - I used this site for an explanation of linking two JS files
+- https://stackoverflow.com/questions/54358737/add-and-remove-id-by-pure-javascript - I used this site for an explanation on adding/removing classes
+- https://stackoverflow.com/questions/49104207/how-to-prevent-broken-image-appearing-while-loading-my-real-image-from-server-in - I used this site for an explanation on how to remove the broken image icon on page load
+- Many thanks to Craig Hudson from the CI Slack community who helped me fix a bug on the selectOption function
+- And many many thanks to my CI mentor Rohit Sharma for his expert advice on industry standards and best practices
 
 #### Media
 
 - Images sourced from Google with the Creative Commons License and used solely for educational purposes.
 - Icon images - Font Awesome library https://fontawesome.com/
 - Font - Google Font library https://fonts.google.com/
+
+#### Original and Customized Code
+
+- HTML:
+
+  - The first <div class="container"> is customized from 'Create a Quiz App using HTML, CSS & JavaScript' video by CodeGeek
+  - The rest of the HTML code is original code
+
+- CSS:
+
+  - Majority is original code. Some code customized for the use of Flexbox
+
+- JavaScript:
+  - Use of external JS file for quiz questions is original code
+  - Variables list customized from 'Create a Quiz App using HTML, CSS & JavaScript' video by CodeGeek
+  - function initializeAnswerOption() - original code
+  - function selectOption() - customized code that Craig Hudson (Slack community) helped me with
+  - function displayNewQuestion() - customized from 'Create a Quiz App using HTML, CSS & JavaScript' video by CodeGeek and includes original code for image selection and display
+  - function answerText() - customized from 'Create a Quiz App using HTML, CSS & JavaScript' video by CodeGeek
+  - function displayEndSection() - original code
+  - function submit() - combination of customised code 'Create a Quiz App using HTML, CSS & JavaScript' video by CodeGeek and help from Craig Hudson on Slack
+  - function increaseScore() - customized from 'Create a Quiz App using HTML, CSS & JavaScript' video by CodeGeek
+  - function startGame() - customized from 'Create a Quiz App using HTML, CSS & JavaScript' video by CodeGeek and includes original code for forEach function
