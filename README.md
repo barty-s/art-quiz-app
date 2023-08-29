@@ -130,7 +130,7 @@ If the incorrect answer is selected, the selected option will turn red. The scor
 
 ### Bug Fixes
 
-- After testing the HTML code for the site, I had to fix two minor errors on the <image> element - I had to include the alt and the src attributes. No other errors were found.
+- After testing the HTML code for the site, I had to fix two minor errors on the <image> element - I had to include the alt and the src attributes. No other errors were found. Fix jump links - don't use 'name', link to an id instead.
 
 - After testing the CSS code for the site, I had to fix one minor error on the <image> element - I had to correct the value for max-height. No other errors were found.
 

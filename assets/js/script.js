@@ -1,4 +1,4 @@
-//List of questions imported from external JS file (original code)
+//List of questions
 import { QUESTIONS } from "./questions.js";
 
 //List of variables to be used throughout the javascript code
@@ -14,64 +14,55 @@ let listOfQuestions = [];
 let questionImage = document.getElementById("question-image");
 let scoreText = document.getElementById("score");
 let questionCounter = 0;
-let totalQuestions = 2;
+let totalQuestions = 7;
 
-// Main function to run the game, it calls the function that displays the questions using spread operator
-function startGame() {
-  listOfQuestions = [...QUESTIONS];
-  displayNewQuestion();
+//Functions to run the game
 
-  //to loop through the answer options
-  answerOptions.forEach(function (answerOption) {
-    answerOption.addEventListener("click", selectOption);
-  });
+//add eventlistener to selected option
+function initializeAnswerOption(answerOption) {
+  answerOption.addEventListener("click", selectOption);
 }
 
-// Function to handle the selection of an answer option
+//to handle the selection of an answer option after being clicked
 function selectOption() {
-  // If an option is already selected, deselect it
   if (selectedOption) {
     selectedOption.classList.remove("selected");
   }
-  // Set the selected option to the clicked option
+
   selectedOption = this;
   selectedOption.classList.add("selected");
   submitAnswer.classList.remove("hidden");
 }
 
-/**
- * Function to generate a new question, randomly selected from list of questions.
- * If the question limit has been reached, the final result will be shown.
- */
+//to generate a new question randomly selected from list of questions
 function displayNewQuestion() {
-  //when to display the final result
   if (questionCounter > totalQuestions) {
     displayEndSection();
   }
 
   questionCounter++;
 
-  //to display a question at random from the question list
   let questionIndex = Math.floor(Math.random() * listOfQuestions.length);
   currentQuestion = listOfQuestions[questionIndex];
 
-  //to set the image/text for the answer options, taking the info from the array (original code)
+  //to display the image and answer options
   questionImage.setAttribute("src", `assets/images/${currentQuestion.img}`);
 
-  //to display the answer options associated with each image
-  //use arrow function
-  answerOptions.forEach((answerOption) => {
-    let number = answerOption.dataset["option"];
-    answerOption.innerText = currentQuestion["option" + number];
-  });
+  answerOptions.forEach(answerText);
 
-  //splice the question just shown out of the array so it won't be shown again,
+  //to splice the question just shown out of the array so it won't be shown again
   listOfQuestions.splice(questionIndex, 1);
 
   submitAnswer.classList.add("hidden");
 }
 
-//Funtion called when question limit has been reached - shows final score and play again button (original code)
+//to display the text for each answer
+function answerText(answerOption) {
+  let number = answerOption.dataset["option"];
+  answerOption.innerText = currentQuestion["option" + number];
+}
+
+//to show final score and play again button
 function displayEndSection() {
   gameSection.classList.add("hidden");
   endSection.classList.remove("hidden");
@@ -81,6 +72,7 @@ function displayEndSection() {
 
 submitAnswer.addEventListener("click", submit);
 
+//to handle the submit button when clicked
 function submit() {
   if (!selectedOption) {
     return;
@@ -106,10 +98,17 @@ function submit() {
   }, 1000);
 }
 
-//Function to increase the score if user answers correctly
+//to increase correct answer score
 function increaseScore(num) {
   score += num;
   scoreText.innerText = score;
+}
+
+//to run the game
+function startGame() {
+  answerOptions.forEach(initializeAnswerOption);
+  listOfQuestions = [...QUESTIONS];
+  displayNewQuestion();
 }
 
 addEventListener("DOMContentLoaded", startGame);
