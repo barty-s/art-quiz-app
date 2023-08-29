@@ -157,7 +157,7 @@ If the incorrect answer is selected, the selected option will turn red. The scor
 2. click on Pages
 3. click deploy from branch.
 
-I sometimes had to manually update the repository by:
+I initally had to manually update the repository by:
 
 1. clicking on the 'Last deployed' link on the Pages page
 2. clicking on 'Re-run all jobs' on the Actions page
@@ -176,17 +176,16 @@ The live link can be found here: https://barty-s.github.io/art-quiz-app/index.ht
 
 #### Content
 
-- 'Create a Quiz App using HTML, CSS & JavaScript' by CodeGeek https://www.youtube.com/watch?v=Opje9VBrNfg&t=1791s - this video was used for the structure of the Javascript code.
-  While using this tutorial as a learning tool for this project, the code was customised as much as possible to fit the scope of the Art Quiz app project and to ensure plagiarism was avoided.
+- 'Create a Quiz App using HTML, CSS & JavaScript' by CodeGeek https://www.youtube.com/watch?v=Opje9VBrNfg&t=1791s - this video was used for the structure of the Javascript code. While using this tutorial as a learning tool for this project, the code was customised as much as possible to fit the scope of the Art Quiz app project and to ensure plagiarism was avoided.
 - https://stackoverflow.com/questions/5480945/refreshing-page-on-click-of-a-buttons - this site helped solve the problem I had with the code for restarting the quiz with the button click.
 - https://css-tricks.com/snippets/css/a-guide-to-flexbox/#aa-background - this site breaks down the specificities of flexbox.
 - https://www.freecodecamp.org/news/three-dots-operator-in-javascript/ - for explanation of the three dot spread operator in JavaScript
 - https://www.w3schools.com/js/js_arrow_function.asp - for explanation of the arrow function in JavaScript
-- https://sabe.io/blog/javascript-yes-no-confirmation-box and https://stackoverflow.com/questions/32394684/how-to-confirm-and-call-function-with-onclick - for explanation of Confirm box in JavaScript
 - https://www.scaler.com/topics/javascript/import-js-file-in-js/ - for explanation of linking two JS files
-- https://stackoverflow.com/questions/54358737/add-and-remove-id-by-pure-javascript - for explanation on adding/removing IDs
-- https://stackoverflow.com/questions/49104207/how-to-prevent-broken-image-appearing-while-loading-my-real-image-from-server-in - for explanation on how to remove broken image icon on play page load
-- Craig Hudson in the CI slack community who helped me fix a bug on the select answer options
+- https://stackoverflow.com/questions/54358737/add-and-remove-id-by-pure-javascript - for explanation on adding/removing classes
+- https://stackoverflow.com/questions/49104207/how-to-prevent-broken-image-appearing-while-loading-my-real-image-from-server-in - for explanation on how to remove broken image icon on page load
+- Many thanks to Craig Hudson from the CI Slack community who helped me fix a bug on the select answer options
+- And many many thanks to my CI mentor Rohit Sharma for his expert advice on industry standards and best practices.
 
 #### Media
 
