@@ -29,7 +29,7 @@ a:hover {
   font-weight: bold;
 }
 
-/*Styling for nav-bar used on all pages of website*/
+/*Styling for nav-bar*/
 nav {
   background-color: #ffffff;
   color: #2342a4;
@@ -130,7 +130,7 @@ button:hover,
   display: none;
 }
 
-/*Styling for footer section on all pages*/
+/*Styling for footer section*/
 footer {
   color: #ffffff;
   margin-bottom: 10px;

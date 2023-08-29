@@ -96,18 +96,17 @@ If the incorrect answer is selected, the selected option will turn red. The scor
 
 ##### Game Section
 
-1. As the user lands on the quiz homepage, they will see the nav-bar with the title of the quiz and below that, a link to 'Play', which will refresh the page, and to 'About', which will navigate the user to the About page.
+1. As the user lands on the quiz homepage, they will see the nav-bar with the title of the quiz and below that, a link to 'Play', which will refresh the page, and to 'About', which will navigate the user to the About section.
 2. Immediately below the nav-bar the user sees the quiz section. They will see the main question - 'Name the artist', which is what they must do throughout the quiz.
-3. Below the question, there will be an image of an artwork. This image changes when the user clicks on one of the artist option buttons, essentially starting the quiz.
-4. There are four artist option buttons just under the image. One of the buttons is the correct answer and will turn green when selected - indicating the user was correct. If the user selects an incorrect answer, it will turn red. The correct answer will not be shown. The user can only discover the correct answer by re-taking the quiz.
-5. Below the artist options the user will see their score tally. This will increase by one if they answer correctly, or remain unchanged if they answer incorrectly. The total number of questions in the quiz is eight. However, there are 18 images for the quiz to randomly select from, therefore ensuring the user can play multiple times without the risk of having every question repeated.
-6. The user will then see the footer which has three icons for social media websites and the author's line with links to their LinkedIn profile and the GitHub repository for the quiz. All links open in a new tab.
+3. Below the quiz question the user will see their score tally. This will increase by one if they answer correctly, or remain unchanged if they answer incorrectly. The total number of questions in the quiz is eight. However, there are 18 images for the quiz to randomly select from, therefore ensuring the user can play multiple times without the risk of having every question repeated.
+4. Below the score tally, the user will see an image of an artwork. This image changes when the user clicks on the submit button after having chosen one of the artist option buttons.
+5. There are four artist option buttons just under the image. On clicking an option it will be highlighted in blue and a submit answer button will appear. One of the options is the correct answer and will turn green when selected and submitted - indicating the user was correct. If the user selects and submits an incorrect answer, it will turn red. The correct answer will not be shown if the incorrect answer is selected. The user can only discover the correct answer by re-taking the quiz.
 
 <img src="readme/play-responsive.png"> <img src="readme/play-mini.png">
 
 ##### End Section
 
-1. When the user has answered eight questions the quiz section inner html will change to the end section html.
+1. When the user has answered eight questions the quiz section will be hidden and the end section will be displayed.
 2. The user will see a message congratulating them on finishing the quiz. They will see their total correct score. And they will see a button inviting them to take the quiz again.
 3. On clicking the Take Quiz Again button, the screen will refresh and the quiz will start from 0 again.
 
@@ -115,10 +114,10 @@ If the incorrect answer is selected, the selected option will turn red. The scor
 
 #### About Section
 
-1. When the user clicks the 'About' link in the nav-bar, they will be directed to the About page.
-2. They will see the same nav-bar and footer as on the home page.
-3. The user will see a brief explanation of the inspiration behind the quiz which contains a link to 'The Story of Art Without Men' book website which opens in a new tab.
-4. The user will then see a button 'Let's Play'. When clicked, the user will be navigated back to the Play page, the main page of the site, where they can begin the quiz.
+1. When the user clicks the 'About' link in the nav-bar, they will be directed to the About section just below the Game section. The user's score will not be affected by navigating to the About section, complying with defensive design practices.
+2. The user will see a brief explanation of the inspiration behind the quiz which contains a link to 'The Story of Art Without Men' book website which opens in a new tab and they will see the Rules of the Game, outlining how to play the game.
+3. The user will then see a button 'Let's Play'. When clicked, the user will be navigated back to the top of the page to resume the game.
+4. Below the About Section, the user will then see the footer which has three icons for social media websites, and the author's line with links to their LinkedIn profile and the GitHub repository for the quiz. All links open in a new tab.
 
 <img src="readme/about-responsive.png"> <img src="readme/about-responsive-2.png"> <img src="readme/about-mini.png">
 
@@ -130,11 +129,11 @@ If the incorrect answer is selected, the selected option will turn red. The scor
 
 ### Bug Fixes
 
-- After testing the HTML code for the site, I had to fix two minor errors on the <image> element - I had to include the alt and the src attributes. No other errors were found. Fix jump links - don't use 'name', link to an id instead.
+- After testing the HTML code for the site, I had to fix two minor errors on the <image> element - I had to include the alt and the src attributes. I also had to fix the jump links by using the more up-to-date 'id' link rather than 'name'. No other errors were found.
 
 - After testing the CSS code for the site, I had to fix one minor error on the <image> element - I had to correct the value for max-height. No other errors were found.
 
-- After testing the JavaScript code for the site, I had to fix one minor error - I had declared a variable for container/gameSecton but had never used it in the code. So, I updated the function displayEndSection () to fix the bug.
+- After testing the JavaScript code for the site, I had to fix one minor error - I had declared a variable for container/gameSecton but had never used it in the code. So, I updated the function displayEndSection() to fix the bug.
 
 ### Deployment
 
