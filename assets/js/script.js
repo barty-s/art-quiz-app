@@ -90,8 +90,6 @@ function submit() {
 
   // to move on to the next question
   setTimeout(() => {
-    selectedOption.classList.remove(classToApply);
-    selectedOption.classList.remove("selected");
     answerOptions.forEach(clearClasses);
     displayNewQuestion();
   }, 1000);
