@@ -22,7 +22,7 @@ let totalQuestions = 7;
 
 //Functions to run the game
 
-/**Adds eventlistener to selected option*/
+/**Adds event listener to selected option*/
 function initializeAnswerOption(answerOption) {
   answerOption.addEventListener("click", selectOption);
 }
@@ -101,15 +101,15 @@ function submit() {
   setTimeout(clearSubmission, 1000);
 }
 
+/**Removes classes on selected option after answer submission*/
+function clearClasses(answerOption) {
+  answerOption.classList.remove("correct", "incorrect", "selected");
+}
+
 /**Loads new image and question without any classes applied*/
 function clearSubmission() {
   answerOptions.forEach(clearClasses);
   displayNewQuestion();
-}
-
-/**Removes classes on selected option after answer submission*/
-function clearClasses(answerOption) {
-  answerOption.classList.remove("correct", "incorrect", "selected");
 }
 
 /**Increases correct answer score*/
