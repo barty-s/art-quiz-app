@@ -16,7 +16,7 @@ This is an art quiz app intended to test the user's knowledge of Great Women Art
 
 ### Features
 
-- Nav Bar - The title of the quiz is visible in larger text and acts as a link to the homepage and refreshes the game when clicked. Directly underneath are links taking the user to the About section or the Play section. The user's score is not lost on navigating to the Play or About section as the game essentially begins on page load.
+- Nav Bar - The title of the quiz is visible in larger text. It acts as a link to the homepage and refreshes the game when clicked. Directly underneath are links taking the user to the Play section and the About section. The user's score is not lost on navigating to the Play or About section as the game essentially begins on page load.
 
 <img src="readme/nav-bar.png">
 
