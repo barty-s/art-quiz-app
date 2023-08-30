@@ -70,8 +70,6 @@ function displayEndSection() {
   finalScore.innerHTML = `${score}`;
 }
 
-submitAnswer.addEventListener("click", submit);
-
 //to handle the submit button when clicked
 function submit() {
   if (!selectedOption) {
@@ -109,6 +107,7 @@ function startGame() {
   answerOptions.forEach(initializeAnswerOption);
   listOfQuestions = [...QUESTIONS];
   displayNewQuestion();
+  submitAnswer.addEventListener("click", submit);
 }
 
 addEventListener("DOMContentLoaded", startGame);
