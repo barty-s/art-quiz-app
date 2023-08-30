@@ -89,12 +89,16 @@ function submit() {
   selectedOption.classList.add(classToApply);
 
   // to move on to the next question
-  setTimeout(() => {
-    answerOptions.forEach(clearClasses);
-    displayNewQuestion();
-  }, 1000);
+  setTimeout(clearSubmission, 1000);
 }
 
+//to load new image and question without any classes applied
+function clearSubmission() {
+  answerOptions.forEach(clearClasses);
+  displayNewQuestion();
+}
+
+//to remove classes on selected option after answer submission
 function clearClasses(answerOption) {
   answerOption.classList.remove("correct");
   answerOption.classList.remove("incorrect");
