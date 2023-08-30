@@ -1,7 +1,11 @@
-//List of questions
+/**
+ * QUESTIONS js file contains an array of objects.
+ * Each object contains an image, four answer options and the correct answer number.
+ * There are 18 question objects to be used in the quiz.
+ */
 import { QUESTIONS } from "./questions.js";
 
-//List of variables to be used throughout the javascript code
+//List of variables
 let gameSection = document.getElementById("container");
 let endSection = document.getElementById("end-section");
 let finalScore = document.getElementById("final-score");
@@ -18,12 +22,12 @@ let totalQuestions = 7;
 
 //Functions to run the game
 
-//add eventlistener to selected option
+/**Adds eventlistener to selected option*/
 function initializeAnswerOption(answerOption) {
   answerOption.addEventListener("click", selectOption);
 }
 
-//to handle the selection of an answer option after being clicked
+/**Handles the selection of an answer option after being clicked*/
 function selectOption() {
   if (selectedOption) {
     selectedOption.classList.remove("selected");
@@ -34,7 +38,11 @@ function selectOption() {
   submitAnswer.classList.remove("hidden");
 }
 
-//to generate a new question randomly selected from list of questions
+/**
+ * Generates a new question randomly selected from the list of questions.
+ * The image and answer options are then displayed.
+ * And the question just shown is spliced out of the array so it won't be shown again
+ */
 function displayNewQuestion() {
   if (questionCounter > totalQuestions) {
     displayEndSection();
@@ -45,24 +53,22 @@ function displayNewQuestion() {
   let questionIndex = Math.floor(Math.random() * listOfQuestions.length);
   currentQuestion = listOfQuestions[questionIndex];
 
-  //to display the image and answer options
   questionImage.setAttribute("src", `assets/images/${currentQuestion.img}`);
 
   answerOptions.forEach(answerText);
 
-  //to splice the question just shown out of the array so it won't be shown again
   listOfQuestions.splice(questionIndex, 1);
 
   submitAnswer.classList.add("hidden");
 }
 
-//to display the text for each answer
+/**Displays the text for each answer*/
 function answerText(answerOption) {
   let number = answerOption.dataset.option;
   answerOption.innerText = currentQuestion["option" + number];
 }
 
-//to show final score and play again button
+/**Shows the final score and play again button*/
 function displayEndSection() {
   gameSection.classList.add("hidden");
   endSection.classList.remove("hidden");
@@ -70,15 +76,19 @@ function displayEndSection() {
   finalScore.innerHTML = `${score}`;
 }
 
-//to handle the submit button when clicked
+/**
+ * Handles the submit button when clicked.
+ * Retrieves the number of the option selected by the user from the questions object.
+ * Checks if the answer is correct or incorrect, and increases the score tally accordingly.
+ * Then moves onto the next question after a short time-interval.
+ */
 function submit() {
   if (!selectedOption) {
     return;
   }
-  //to show the number of the option selected by the user
+
   let selectedAnswer = selectedOption.dataset.option;
 
-  //to check if the answer is correct or incorrect and increase score counter accordingly
   let classToApply =
     selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
 
@@ -88,34 +98,33 @@ function submit() {
 
   selectedOption.classList.add(classToApply);
 
-  // to move on to the next question
   setTimeout(clearSubmission, 1000);
 }
 
-//to load new image and question without any classes applied
+/**Loads new image and question without any classes applied*/
 function clearSubmission() {
   answerOptions.forEach(clearClasses);
   displayNewQuestion();
 }
 
-//to remove classes on selected option after answer submission
+/**Removes classes on selected option after answer submission*/
 function clearClasses(answerOption) {
   answerOption.classList.remove("correct");
   answerOption.classList.remove("incorrect");
   answerOption.classList.remove("selected");
 }
 
-//to increase correct answer score
+/**Increases correct answer score*/
 function increaseScore(num) {
   score += num;
   scoreText.innerText = score;
 }
 
-//to run the game
+/**Runs the game*/
 function startGame() {
-  answerOptions.forEach(initializeAnswerOption);
   listOfQuestions = [...QUESTIONS];
   displayNewQuestion();
+  answerOptions.forEach(initializeAnswerOption);
   submitAnswer.addEventListener("click", submit);
 }
 
