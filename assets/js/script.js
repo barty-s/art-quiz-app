@@ -92,8 +92,15 @@ function submit() {
   setTimeout(() => {
     selectedOption.classList.remove(classToApply);
     selectedOption.classList.remove("selected");
+    answerOptions.forEach(clearClasses);
     displayNewQuestion();
   }, 1000);
+}
+
+function clearClasses(answerOption) {
+  answerOption.classList.remove("correct");
+  answerOption.classList.remove("incorrect");
+  answerOption.classList.remove("selected");
 }
 
 //to increase correct answer score
