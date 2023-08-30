@@ -109,9 +109,7 @@ function clearSubmission() {
 
 /**Removes classes on selected option after answer submission*/
 function clearClasses(answerOption) {
-  answerOption.classList.remove("correct");
-  answerOption.classList.remove("incorrect");
-  answerOption.classList.remove("selected");
+  answerOption.classList.remove("correct", "incorrect", "selected");
 }
 
 /**Increases correct answer score*/

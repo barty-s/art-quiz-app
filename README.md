@@ -16,7 +16,7 @@ This is an art quiz app intended to test the user's knowledge of Great Women Art
 
 ### Features
 
-- Nav Bar - The title of the quiz is visible in larger text and directly underneath are links taking the user to the About section or the Play section. The user's score is not lost on navigating to the About section. The game is refreshed on clicking the 'Play' link.
+- Nav Bar - The title of the quiz is visible in larger text and acts as a link to the homepage and refreshes the game when clicked. Directly underneath are links taking the user to the About section or the Play section. The user's score is not lost on navigating to the Play or About section as the game essentially begins on page load.
 
 <img src="readme/nav-bar.png">
 
@@ -28,11 +28,11 @@ On clicking one answer option, it is highlighted in blue and the button to submi
 
 <img src="readme/select-answer-submit.png">
 
-If the correct answer is selected, the option will turn green and the score tally at the bottom of the page will increase by 1. There is a timeout handler to allow the user to see if they have chosen the correct/incorrect answer. The next image will then be shown.
+If the correct answer is selected and submitted, the option will turn green and the score tally at the bottom of the page will increase by 1. There is a timeout handler to allow the user to see if they have chosen the correct/incorrect answer. The next image will then be shown.
 
 <img src="readme/correct-answer.png">
 
-If the incorrect answer is selected, the selected option will turn red. The score will not be updated. Again there is a timeout handler. Then the next image will be shown.
+If the incorrect answer is selected and submitted, the selected option will turn red. The score will not be updated. Again there is a timeout handler. Then the next image will be shown.
 
 <img src="readme/incorrect-answer.png">
 
@@ -96,7 +96,7 @@ If the incorrect answer is selected, the selected option will turn red. The scor
 
 ##### Game Section
 
-1. As the user lands on the quiz homepage, they will see the nav-bar with the title of the quiz and below that, a link to 'Play', which will refresh the page, and to 'About', which will navigate the user to the About section.
+1. As the user lands on the quiz homepage, they will see the nav-bar with the title of the quiz which is a link that will refresh the page. Immediately below are the links 'Play' and 'About'. When clicked the user will be navigated to the Play and About sections on the index page.
 2. Immediately below the nav-bar the user sees the quiz section. They will see the main question - 'Name the artist', which is what they must do throughout the quiz.
 3. Below the quiz question the user will see their score tally. This will increase by one if they answer correctly, or remain unchanged if they answer incorrectly. The total number of questions in the quiz is eight. However, there are 18 images for the quiz to randomly select from, therefore ensuring the user can play multiple times without the risk of having every question repeated.
 4. Below the score tally, the user will see an image of an artwork. This image changes when the user clicks on the submit button after having chosen one of the artist option buttons.
@@ -134,6 +134,8 @@ If the incorrect answer is selected, the selected option will turn red. The scor
 - After testing the CSS code for the site, I had to fix one minor error on the image element - I had to correct the value for max-height. No other errors were found.
 
 - After testing the JavaScript code for the site, I had to fix one minor error - I had declared a variable for container/gameSecton but had never used it in the code. So, I updated the function displayEndSection() to fix the bug. I also used the dot notation for option as recommended by jshint.com after testing the site.
+
+- There was a bug on the classes applied to the answer option after clicking select and submit. If the user clicked another answer option after clicking submit, the classes stayed on the answer options when the next question loaded. I had to add a new function to remove all classes after the submit button was clicked and the new question was loaded.
 
 ### Deployment
 
@@ -202,7 +204,7 @@ The live link can be found here: https://barty-s.github.io/art-quiz-app/index.ht
 
 - CSS:
 
-  - Majority is original code. Some code customized for the use of Flexbox
+  - Majority is original code. Code is customized for the use of Flexbox
 
 - JavaScript:
   - Use of external JS file for quiz questions is original code
@@ -213,5 +215,7 @@ The live link can be found here: https://barty-s.github.io/art-quiz-app/index.ht
   - function answerText() - customized from 'Create a Quiz App using HTML, CSS & JavaScript' video by CodeGeek
   - function displayEndSection() - original code
   - function submit() - combination of customized code 'Create a Quiz App using HTML, CSS & JavaScript' video by CodeGeek and help from Craig Hudson on Slack
+  - function clearSubmission() - original code
+  - function clearClasses() - original code
   - function increaseScore() - customized from 'Create a Quiz App using HTML, CSS & JavaScript' video by CodeGeek
   - function startGame() - customized from 'Create a Quiz App using HTML, CSS & JavaScript' video by CodeGeek and includes original code for forEach function
